@@ -1,0 +1,206 @@
+#giohang {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.table-wrapper {
+    margin-bottom: 20px;
+}
+.tb_giohang .t_head_tb td{
+
+    background: #333;
+    padding: 15px;
+    border-bottom: none;
+    border-right: 1px solid #fff;
+    text-align: center;
+}
+.tb_giohang .t_head_tb td span
+{
+    color: #fff;font-weight: 500;
+}
+.tb_giohang .w_sp{width:50%;}
+.tb_giohang .w_giatien, .tb_giohang .w_soluong, .tb_giohang .w_thanhtien{width:16%;text-align:right;}
+.cart.table-wrapper .item .col.item{display:table-cell;}
+.cart.table-wrapper .product-item-photo{width:75px;}
+.cart.table-wrapper .product-item-photo.photo1{width:110px;}
+.cart.table-wrapper .product-item-photo{display:inline-block;float:left;}
+.cart.table-wrapper .product-item-details{display:inline-block;width:70%;}
+.cart.table-wrapper .product-item-name{display:inline-block;font-weight:400;margin-top:5px;width: 100%;text-align: left;}
+.cart.table-wrapper .product-item-name + .item-options{margin:0;}
+.item-options
+{
+    font-size: 13px;
+}
+.cart.table-wrapper .item-options dt{float:left;clear:left;/*margin:0 10px 5px 0;*/font-weight:normal;}
+.cart.table-wrapper .item-options dd{float:left;display:inline-block/*;margin:0 0 5px;*/}
+.cart.table-wrapper .col, .cart.table-wrapper .item .col.item{display:table-cell;vertical-align:middle;padding: 5px 0;    border-right: 1px solid #fff;text-align: center;}
+
+.cotfix
+{
+    text-align: left;    display: flex;align-items: center;
+}
+
+.price-including-tax, .price-excluding-tax{display:block;font-size:1.8rem;line-height:1;}.price-including-tax .price, .price-excluding-tax .price{font-weight:400;font-size:13px;}
+.item_sub_sp{display:inline-block;color:#333;width:100%;float:left;}
+.item_sub_sp1{display:inline-block;color:#c40000;width:100%;float:left;}
+#giohang .cart.main.actions{text-align:right;}
+#giohang .cart .continue{float:left;color:#326e51;padding-left:20px;}
+#giohang .cart button{margin-left:10px;}
+.capnhapgh{background:#fff;border:1px solid #cccccc;margin-right:10px;padding:10px 20px;    border-radius: 3px;}
+#giohang{width:100%;float:left;margin-top:20px;}
+.cart-summary{position:static;background:#fff;border-left:1px solid #e5e5e5;border-right:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;border-top:3px solid #c40000;padding:0;width:100%;float:left;}
+.tieudetong{width:100%;float:left;text-align:center;font-size:16px;font-weight:700;padding:7px 0;border-bottom:1px solid #d1d1d1;}
+.tablegiohang{width:100%;}
+.tablegiohang tr td{padding-top:15px;}
+#mucthanhtoan{width:100%;float:left;   margin-top: 20px;}
+.header_checkout{width:100%;margin-top:10px;}
+.opc-progress-bar{position:relative;margin:0 0 20px;font-size:0;margin-top:10px;}
+.opc-progress-bar-item{width:33%;position:relative;vertical-align:top;display:inline-block;}
+.opc-progress-bar:before{background:#c40000;height:4px;width:85%;content:"";position:absolute;left:6%;top:19px;}
+.opc-progress-bar-item._complete{cursor:pointer;}
+.item_process_1{background:url(../../img/img_checkout_1.png) no-repeat 0% top;text-align:left;padding-left:3px;}
+.item_process_2{background:url(../../img/img_checkout_2.png) no-repeat 35% top;text-align:left;padding-left:25px;}
+.item_process_3{background:url(../../img/img_checkout_3.png) no-repeat 75% top;text-align:right;padding-right:0px;}
+.opc-progress-bar-item._active.item_process_2{background:url(../../img/img_checkout_2_active.png) no-repeat 35% top;}
+.opc-progress-bar-item > span{display:inline-block;padding-top:45px;width:100%;word-wrap:break-word;color:#e4e4e4;font-weight:300;font-size:13px;}
+.opc-progress-bar-item._complete > span{color:#333333;font-size:13px;}
+.opc-progress-bar-item._active > span{color:#c40000;}
+.noidungthanhtoan,.thongtinnhanhang,.thongtinvanchuyen{width:100%;float:left;}
+.noidungthanhtoan{margin-top:30px;}
+.thongtinnhanhang,.thongtinvanchuyen{border-top:3px solid #333;border-left:1px solid #c9d0cd;border-right:1px solid #c9d0cd;border-bottom:1px solid #c9d0cd;margin-bottom:15px;}
+.title_thanhtoan{border-bottom:1px solid #c9d0cd;width:100%;float:left;padding:10px 20px 10px 40px;background:url(../../img/icon_steploin_2_active.png) no-repeat 13px 10px;color:#c40000;font-weight:700;}
+.title_thanhtoan.vanchuyen{width:100%;float:left;padding:10px 20px 10px 35px;background:url(../../img/icon_steploin_3_active.png) no-repeat 13px 10px;color:#c40000;font-weight:700;}
+.title_thanhtoan span{color:#333;font-weight:700;font-size:17px;}
+.title_thanhtoan a{font-size:13px;float:right;font-weight:400;margin-top:3px;color:#c40000;position:relative;}
+.title_thanhtoan a.dalogin:before{height:20px;width:20px;content:"";left:-25px;top:-2px;background:#c40000 url(../../img/check_white.png) no-repeat 3px 3px;background-size:15px;overflow:hidden;border-radius:50%;position:absolute;}
+.noidungthongtinnhanhang{}
+.cot1{width:100%;float:left;margin-top:20px;margin-bottom:10px;}
+.cot1 .col-md-4{padding:0;}
+.txt_form{line-height:40px;}
+.control input,.control select,.control textarea{background:#ffffff;background-clip:padding-box;border:1px solid #c2c2c2;border-radius:1px;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:13px;height:40px;line-height:1.42857143;padding:0 9px;vertical-align:baseline;width:100%;box-sizing:border-box;}
+.control textarea{height:50px;border-radius:5px;padding-top:5px;font-size:13px;}
+.block_noinhan{padding:20px 80px 0 50px;}
+.item_diachinhanhang{width:100%;float:left;}
+.item_diachinhanhang label:hover{background:#ececec;}
+.item_diachinhanhang label{padding:10px 100px 10px 40px;position:relative;font-size:13px;color:#666666;font-weight:400;cursor:pointer;border-bottom:1px solid #ececec;margin-bottom:0;display:block;}
+.item_diachinhanhang label input{left:15px;top:8px;position:absolute;}
+.item_diachinhanhang label input[type=checkbox]{}
+.item_diachinhanhang .txt_default{position:absolute;right:10px;top:10px;color:#c40000;}
+.item_diachinhanhang .btn_xemthem_title{border:1px solid #cccccc;border-radius:5px;color:#333;display:inline-block;margin-top:5px;cursor:pointer;padding:5px 10px;margin:10px 0 10px 15px;}
+.item_diachinhanhang .btn_xemthem_title:hover{border:1px solid #c40000;}
+.btn_site_4{background:#f0f0f0;border-radius:3px;color:#666;display:inline-block;padding:10px 20px;font-weight:700;font-size:15px;margin-top:10px;border:1px solid #f0f0f0;}
+.noidungvanchuyen{padding:10px 20px;border-bottom:1px solid #c9d0cd;width:100%;float:left;}
+.block_donhang{border:1px solid #c9d0cd;}
+.block_donhang .title_donhang{padding:10px;font-size:17px;border-bottom:1px solid #eaeaea;background: #333}
+.block_donhang .title_donhang a{font-size:14px;font-weight:normal;color: #fff}
+.block_donhang .title_donhang  span
+{
+    color: #fff;
+}
+.block_donhang .item_list_donhang{padding-top:10px;padding-bottom:10px;width:100%;float:left;border-bottom:1px dotted #eaeaea;}
+.block_donhang .thumb_donhang{width:21%;padding:0 10px;float:left;}
+.info_donhang{width:49%;float:left;}
+.block_donhang .title_sanpham_donhang{margin-bottom:3px;}
+.block_donhang .title_sanpham_donhang{margin-bottom:3px;}
+.gia_thanh{padding:0 10px;width:30%;float:left;text-align:right;}
+.item_list_donhang .discount-code{padding:5px 10px 0 10px;border-top:1px solid #d7d7d7;margin-top:25px;}
+.item_list_donhang .block_input_coupon{position:relative;padding-right:90px;}
+.item_list_donhang .payment-option-content .input-text{width:100%;padding-left:15px;height:34px;}
+.item_list_donhang .payment-option-content .action-apply{width:80px;position:absolute;right:0;top:0;height:34px;font-weight:400;font-size:14px;padding:5px 0;text-align:center;}
+.phivanchuyen{border-top:1px solid #d7d7d7;margin-top:10px;padding-top:10px;}
+.block_donhang .txt_giatien{font-size:17px;font-weight:700;color:#c40000;text-align:right;}
+.block_check_susscess{background:#fbfff3 url(../../img/check_out_suscess.png) no-repeat 20px 20px;padding:20px 20px 20px 100px;border:1px solid #eaf7ec;margin-bottom:50px;color:#333;line-height:30px;margin-top:20px;}
+.order-details-items{border-bottom:1px solid #d1d1d1;margin-bottom:20px;padding-bottom:10px;}
+.order-details-items .order-title > strong{font-weight:300;line-height:1.1;font-size:1.8rem;margin-top:1.5rem;margin-bottom:1rem;display:inline-block;}
+#my-orders-table tr:nth-child(2n+1) td{background:#f7f7f7;}
+.order-details-items .table-order-items .product-item-name{margin-top:0;}
+.order-details-items .item-options .option-dt{float:left;clear:left;margin-right:5px !important;font-weight:400;}.order-details-items .item-options .option-dd{margin:0 0 0px;}
+.table:not(.cart):not(.totals) tfoot .mark{font-weight:400;text-align:right;}
+.box-order-shipping-address{padding:0;}
+.btn_site_2 {
+    background: #333;
+    border: 1px solid #333;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    padding: 9px 50px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.item-info {
+    border-bottom: 1px solid #ececec;
+}
+div.mage-error[generated]{margin-top:7px;}
+div.mage-error[generated]{color:#e02b27;font-size:1.2rem;}
+.item_sub_sp1
+{
+    text-align: left;
+}
+@media only screen and (max-width: 768px){
+.cot1
+{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.cot1 .col-md-8
+{
+    padding: 0;
+}
+
+.w_thanhtien,.tongtien1
+
+{
+    display: none!important;
+}
+.cart.table-wrapper .product-item-details {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}.tb_giohang .w_sp {
+    width: 40%;
+}
+.tb_giohang .w_giatien
+{
+    width: 20%;
+}
+
+.qty
+{
+    padding: 5px!important;
+}
+#giohang .cart button {
+    margin-left: 10px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.checkoutenable {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}#giohang .cart .continue {
+    float: left;
+    color: #326e51;
+    padding-left: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid;
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.block_noinhan
+{
+    padding: 10px;
+}.txt_form {
+    line-height: 20px;
+    font-size: 13px;
+}
+.control input, .control select, .control textarea
+{
+    font-size: 12px;
+}
+}

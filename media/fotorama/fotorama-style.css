@@ -1,0 +1,28 @@
+.fotorama__thumb-border 
+{
+    width: 113px !important;
+    height: 84px !important;
+    border-width: 1px !important;
+    border-color: #ddb053 !important;
+}
+.fotorama__nav--thumbs .fotorama__nav__frame
+{
+    padding-left: 0!important;
+    height: auto !important;
+}
+.fotorama__wrap--slide .fotorama__stage__frame
+{
+	text-align: center;
+}
+.fotorama__img
+{
+  /*  width: auto !important;*/
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100%!important;
+    position: static;
+    margin: auto;
+    display: block;
+    width: 100%;
+    background: transparent;
+}

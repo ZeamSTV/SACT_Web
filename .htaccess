@@ -1,0 +1,217 @@
+RewriteEngine On
+
+DirectoryIndex index.php
+
+#RewriteCond %{HTTP_HOST} !on [NC]
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+
+
+
+
+Options -Indexes
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule index.html$ .php
+
+
+
+
+
+RewriteRule ^trang-chu.html$    index.php [L]
+
+#ĐĂNG NHẬP - ĐĂNG KÝ
+RewriteRule ^dang-nhap.html$    index.php?com=dang-nhap [L]
+
+RewriteRule ^dang-ky.html$    index.php?com=dang-ky [L]
+RewriteRule ^thoat.html$    index.php?com=logout [L]
+RewriteRule ^quen-mat-khau.html$    index.php?com=quen-mat-khau [L]
+RewriteRule ^xac-nhan-mat-khau.html$    index.php?com=xac-nhan-mat-khau [L]
+RewriteRule ^thong-tin-user.html$    index.php?com=thong-tin&act=edit-user [L]
+RewriteRule ^doi-mat-khau.html$ index.php?com=dang-nhap&act=doi-mat-khau [L]
+RewriteRule ^thong-tin.html$    index.php?com=thong-tin&act=thong-tin [L]
+RewriteRule ^don-hang-cua-toi.html$    index.php?com=thong-tin&act=don-hang-cua-toi [L]
+RewriteRule ^so-dia-chi.html$    index.php?com=thong-tin&act=so-dia-chi [L]
+RewriteRule ^thay-doi-mat-khau.html$    index.php?com=thong-tin&act=thay-doi-mat-khau [L]
+
+RewriteRule ^don-hang-cua-toi-([0-9]+).html$ index.php?com=thong-tin&act=don-hang-cua-toi&id=$1 [L]
+RewriteRule ^chi-tiet-tai-khoan.html$    index.php?com=thong-tin&act=chi-tiet-tai-khoan [L]
+
+RewriteRule ^dang-tin-rao-ban-cho-thue.html$    index.php?com=thong-tin&act=dang-tin-rao-ban-cho-thue [L]
+RewriteRule ^dang-tin-rao-ban-cho-thue-([0-9]+).html$    index.php?com=thong-tin&act=dang-tin-rao-ban-cho-thue&id=$1 [L]
+RewriteRule ^quan-ly-rao-ban-cho-thue.html$    index.php?com=thong-tin&act=quan-ly-rao-ban-cho-thue [L]
+RewriteRule ^xoa-tin-([0-9]+).html$    index.php?com=thong-tin&act=quan-ly-rao-ban-cho-thue&del=$1 [L]
+
+
+RewriteRule ^dang-tin-can-mua-can-thue.html$    index.php?com=thong-tin&act=dang-tin-can-mua-can-thue [L]
+RewriteRule ^dang-tin-can-mua-can-thue-([0-9]+).html$    index.php?com=thong-tin&act=dang-tin-can-mua-can-thue&id=$1 [L]
+RewriteRule ^quan-ly-tin-can-mua-can-thue.html$    index.php?com=thong-tin&act=quan-ly-tin-can-mua-can-thue [L]
+RewriteRule ^xoa-tin1-([0-9]+).html$    index.php?com=thong-tin&act=quan-ly-tin-can-mua-can-thue&del=$1 [L]
+
+
+RewriteRule ^dang-tin-moi-gioi.html$    index.php?com=thong-tin&act=dang-tin-moi-gioi [L]
+RewriteRule ^dang-tin-moi-gioi-([0-9]+).html$    index.php?com=thong-tin&act=dang-tin-moi-gioi&id=$1 [L]
+RewriteRule ^quan-ly-tin-moi-gioi.html$    index.php?com=thong-tin&act=quan-ly-tin-moi-gioi [L]
+RewriteRule ^xoa-tin2-([0-9]+).html$    index.php?com=thong-tin&act=quan-ly-tin-moi-gioi&del=$1 [L]
+
+#thumb
+RewriteRule ^thumbb/([0-9]+)x([0-9]+)/([0-9]+)/(.*)$ timthumb_watermark.php?w=$1&h=$2&zc=$3&q=95&src=http://%{HTTP_HOST}/$4  [L]
+RewriteRule ^thumb/([0-9]+)x([0-9]+)/([0-9]+)/(.*)$ timthumb.php?w=$1&h=$2&zc=$3&q=95&src=http://%{HTTP_HOST}/$4  [L]
+#ADMIN ---------------------
+
+RewriteRule ^cmsnew$ cmsnew/index.php?com=user&act=login [L]
+RewriteRule ^cmsnew/$ cmsnew/index.php?com=user&act=login [L]
+#TÌM KIẾM SẢN PHẨM--------------------------------------------
+
+
+RewriteRule ^tim-kiem.html$  index.php?com=san-pham&search=$1 [L]
+
+
+
+
+RewriteRule ^gioi-thieu$  index.php?com=gioi-thieu [L]
+RewriteRule ^lien-he.html$  index.php?com=lien-he [L]
+RewriteRule ^san-pham/p=([0-9]+)$  index.php?com=san-pham&p=$1 [L]
+
+RewriteRule ^san-pham$  index.php?com=san-pham [L]
+
+
+RewriteRule ^dich-vu.html/p=([0-9]+)$  index.php?com=dich-vu&p=$1 [L]
+
+RewriteRule ^dich-vu.html$  index.php?com=dich-vu [L]
+
+
+RewriteRule ^dang-ky-nhan-tin.html$  index.php?com=dang-ky-nhan-tin [L]
+
+RewriteRule ^mo-tai-khoan$  index.php?com=mo-tai-khoan [L]
+
+
+RewriteRule ^video.html$  index.php?com=video [L]
+RewriteRule ^gio-hang.html$  index.php?com=gio-hang [L]
+RewriteRule ^thanh-toan.html$  index.php?com=thanh-toan [L]
+#CHI TIẾT SẢN PHẨM ----------------------------
+
+
+#k cap chi tiet
+
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?com=allxx&tenkhongdau=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+).htm$ index.php?com=all1&tenkhongdau=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?com=all1&tenkhongdau=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/p=([0-9]+)$ index.php?com=all1&tenkhongdau=$1&p=$2 [L]
+#KO CẤP ----------------------------------
+
+
+
+
+###Start Kloxo PHP config Area
+### Please Don't edit these comments or the content in between. kloxo uses this to recognize the lines it writes to the the file. If the above line is corrupted, it may fail to recognize them, leading to multiple lines.
+### begin content - please not remove this line
+
+### MR -- attention
+### 1. Move '#<Ifmodule !mod_php5.c>' until '#</Ifmodule>' on
+###    above '###Start Kloxo PHP config Area'
+### 2. Remove # in front of '#<Ifmodule !mod_php5.c>' and '#</Ifmodule>'
+###    on point (1)
+### 3. Remove # in front of 'AddHandler x-httpd-php52' to activate secondary-php
+###    on point (1)
+### 4. Or Remove # in front of 'AddHandler x-httpd-php' to activate primary-php
+###    on point (1) if select suphp_worker/_event for primary-php
+
+#<Ifmodule !mod_php5.c>
+    #AddHandler x-httpd-php52 .php
+    #AddHandler x-httpd-php .php
+#</Ifmodule>
+
+<Ifmodule mod_php5.c>
+    php_value upload_max_filesize 1024M
+    php_value max_execution_time 36000
+    php_value max_input_time 36000
+    php_value memory_limit 128M
+    php_value post_max_size 64M
+    php_flag register_globals off
+    php_flag display_errors off
+    php_flag file_uploads on
+    php_flag log_errors off
+    php_flag output_buffering off
+    php_flag register_argc_argv on
+    php_flag magic_quotes_gpc off
+    php_flag magic_quotes_runtime off
+    php_flag magic_quotes_sybase off
+    php_flag mysql.allow_persistent off
+    php_flag register_long_arrays on
+    php_flag allow_url_fopen on
+    php_flag cgi.force_redirect on
+    php_flag enable_dl on
+</Ifmodule>
+<ifModule mod_gzip.c>
+    mod_gzip_on Yes
+    mod_gzip_dechunk Yes
+    mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+    mod_gzip_item_include handler ^cgi-script$
+    mod_gzip_item_include mime ^text/.*
+    mod_gzip_item_include mime ^application/x-javascript.*
+    mod_gzip_item_exclude mime ^image/.*
+    mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
+
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+
+  # Remove browser bugs (only needed for really old browsers)
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Video
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
+
+  # CSS, JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # Others
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+</IfModule>
+### end content - please not remove this line
+
+###End Kloxo PHP config Area
+

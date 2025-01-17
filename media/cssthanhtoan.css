@@ -1,0 +1,184 @@
+.noidungtrong
+{
+	width: 100%;
+	float: left;
+}
+.thongtinkhachhang
+{
+	margin-top: 10px;
+	padding: 15px;
+padding-left: 0;
+	border-radius: 5px;
+
+}
+.thongtinthanhtoan
+{
+	margin-top: 10px;
+	padding: 15px;
+	
+	border-radius: 5px;
+}
+.tieudethanhtoan
+{
+	    width: 100%;
+    /* float: left; */
+    float: left;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding: 10px;
+}
+.tieudethanhtoan h3
+{
+	    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    font-family: Caviar;
+
+}
+.pttt, .ptgn
+{
+	background: #f5f5f5;
+	
+	/*padding-top: 15px;
+*/	padding-bottom: 15px;
+}
+.ptgn
+{
+	margin-bottom: 15px;
+}
+.noidungthanhtoan
+{
+	width: 100%;
+	float: left;
+}
+.txtinput
+{
+	width: 100%;
+	float: left;
+	margin: 7px 0;
+}
+.txtinput label
+{
+	color: #000;
+    font-size: 14px;
+    font-family: opensan;
+}
+.txtinput span
+{
+	color: red;
+}
+.txtinput input,.txtinput textarea
+{
+	    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 7px 0;
+    padding-left: 15px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.noidungdonhang
+{
+	width: 100%;
+	float: left;
+}
+.tieudedonhang
+{
+	width: 100%;
+	float: left;
+	padding-bottom: 5px; 
+	border-bottom: 1px solid #ccc;
+}
+.tieudedonhang span
+
+{
+	font-size: 14px;
+	    color: #646464;
+	    font-family: opensan;
+	    font-weight: bold;
+}
+.coldongsp
+{
+	width: 100%;
+	float: left;
+	padding:7px 0; 
+	border-bottom: 1px solid #ccc;
+}
+.coldongsp span
+{
+	font-size: 13px;
+	    color: #646464;
+	    font-family: opensan;
+	
+}
+.couttongtien
+{
+	width: 300px;
+	float: right;
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: right;
+	font-family: opensan_semibold;
+}
+.couttongtien span
+{
+	    font-size: 22px;
+    color: #009688;
+    font-family: opensan;
+}
+.nutdathang
+{
+	    margin-top: 7px;
+    width: 50%;
+    
+    float: right;
+    text-align: right;
+}
+.nutquaylai
+{
+	width: 50%;
+	float: left;
+	text-align: left;
+	margin-top: 20px;
+
+}
+.nutquaylai a
+{
+		font-family: opensan;
+	  font-weight: bold;
+	font-size: 14px;
+}
+.nutdathang button
+{
+	margin-top: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+	width: 100px;
+	font-family: opensan;
+	color: #fff;
+	font-size: 14px;
+	padding: 7px 10px;
+	background: #157b3b;
+}
+.nutdathang button:hover
+{
+	background: #A4D323;
+}
+
+.txtinput .col-xs-12
+{
+	padding-left: 0;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 767px){
+
+
+	.thongtinthanhtoan
+	{
+		padding: 0;
+	}
+
+}

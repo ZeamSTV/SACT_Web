@@ -1,0 +1,556 @@
+.block-popup-login {
+    margin-top: 170px;
+    width: 600px;
+    padding: 0px 20px 0px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.block-popup-login form.login,
+.block-popup-login form.register {
+    border: 0px;
+    padding: 0px;
+    margin: 0;
+    text-align: left;
+    border-radius: 0px;
+}
+.block-popup-login .tt_popup_login {
+    height: 36px;
+    border-bottom: 3px solid #A4D323;
+    background-color: #242424;
+    margin: 0 -20px;
+}
+.block-popup-login .tt_popup_login strong {
+    line-height: 37px;
+    display: inline-block;
+    padding-left: 55px;
+    text-transform: uppercase;
+    font-size: 133.33%;
+    color: #fff;
+    background-image: url(../img/icon-login-popup.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    position: relative;
+    padding-right: 10px;
+    top: -4px;
+    background-color: #A4D323;
+}
+.block-popup-login .tt_popup_login strong:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 37px solid #A4D323;
+}
+.block-popup-login .block-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: normal;
+        width: 100%;
+    margin-top: 20px;
+}
+.block-popup-login .block-content .col-reg {
+    
+    float: left;
+    min-height: 188px;
+}
+.block-popup-login .block-content .col-reg.registered-account {
+    padding-right: 30px;
+    border-right: 1px solid #d0d0d0;
+}
+.block-popup-login .block-content .col-reg.registered-account .btn-submit-login {
+    background-repeat: no-repeat;
+    background-position: 25px center;
+    padding: 0 25px 0px 48px;
+    height: 42px;
+    margin-bottom: 10px;
+    font-size: 116.67%;
+    font-weight: bold;
+    background-image: url(../img/icon-btn-login.png);
+    white-space: nowrap;
+    text-transform: uppercase;
+    background-color: #666666;
+    border: none;
+    color: #fff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.block-popup-login .block-content .col-reg.registered-account .btn-submit-login:hover {
+    background-color: #A4D323;
+}
+.block-popup-login .block-content .col-reg.login-customer {
+    padding-left: 30px;
+    color: #444;
+}
+.block-popup-login .block-content .col-reg.login-customer h2 {
+    font-size: 116.67%;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.block-popup-login .block-content .note-reg {
+    margin: 10px 0px;
+    font-style: italic;
+}
+.block-popup-login .block-content .list-log li {
+    padding: 2px 0px 2px 14px;
+    font-style: italic;
+    position: relative;
+    border-left: none;
+}
+.block-popup-login .block-content .list-log li:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #666666;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+.block-popup-login .block-content .btn-reg-popup {
+    height: 42px;
+    line-height: 42px;
+    padding: 0px 42px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 116.67%;
+    margin-top: 15px;
+    color: #fff !important;
+    font-weight: bold;
+    background-color: #A4D323;
+}
+.block-popup-login .block-content .btn-reg-popup:hover {
+    color: #fff;
+}
+.block-popup-login .email-input {
+    position: relative;
+}
+.block-popup-login .email-input:before {
+    background: url(../img/iconuser.png) no-repeat  #f7f7f7;
+        background-size: 100% 100%;
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid #cecece;
+  
+    top: 0px;
+    left: 0px;
+}
+.block-popup-login .pass-input {
+    position: relative;
+}
+.block-popup-login .pass-input:before {
+    background: url(../img/iconkey.png) no-repeat  #f7f7f7;
+       background-size: 100% 100%;
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid #cecece;
+    top: 0px;
+    left: 0px;
+}
+
+.block-popup-login .sale-input {
+    position: relative;
+}
+.block-popup-login .sale-input:before {
+    background: url(../img/iconsale.png) no-repeat top left #f7f7f7;
+        background-size: 100% 100%;
+    content: "";
+    display: inline-block;
+    width: 42px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    border: 1px solid #cecece;
+    
+    left: 0px;
+}
+
+
+
+
+.block-popup-login .input-text {
+    border: none;
+    margin-bottom: 14px;
+    width: 100%;
+    padding: 0 5px 0px 52px;
+    height: 40px;
+    font-size: 108.33%;
+    border: 1px solid #cecece;
+}
+.block-popup-login .ft-link-p {
+    margin-bottom: 19px;
+}
+.block-popup-login .ft-link-p a {
+    color: #444;
+}
+.close-login {
+    display: inline-block;
+    background: url(../img/btn-close-login.png) no-repeat top left;
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+    text-indent: -9999px;
+    right: 10px;
+    top: 3px;
+    position: absolute;
+    opacity: 1;
+}
+
+
+
+
+
+.tieudedangnhap
+{
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    border-bottom: 2px solid #525252;
+    padding-bottom: 10px;
+}
+.tieudedangnhap h2
+{
+    text-transform:uppercase;
+    font-size: 24px;
+    font-family: UTM_Avobold;
+    color: #80b84b;
+}.menu_login
+{
+    position: relative;
+    margin-top: 10px;
+}
+.menu_login ul {
+    text-align: center;
+    padding-left: 0;
+}
+.menu_login ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 45px;
+}
+.menu_login ul li a {
+    display: block;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-family: UTM_Avo;
+    font-weight: bold;
+    padding: 7px 0 20px 50px;
+    position: relative;
+    color: #000;
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+}
+.menu_login ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 2px;
+    background: #80b84b;
+    margin-top: -10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+.menu_login ul li a:after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 100%;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #80b84b;
+    margin-left: -6px;
+    margin-top: -10px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.menu_login ul li a:hover
+{
+    color: #80b84b;
+}
+.menu_login ul li a:hover:before,
+.menu_login ul li a:hover:after{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+}
+.formlogin
+{
+    padding: 10px;
+/*    background: #24ddb4;
+    border-top:1px solid #a4e864;*/
+}
+.noidunglogin
+{
+    max-width: 500px;
+    margin: 0 auto;
+   
+    padding-top: 5px;
+   /* background: url(../img/login-icon.jpg) no-repeat 0 0;*/
+}
+
+.noidungdki
+{
+    max-width: 555px;
+    margin: 0 auto;
+   
+    padding-top: 5px;
+}
+
+.hinhdd 
+{
+    width: 30%;
+    float: left;
+}
+.hinhdd img
+{
+    width: 100%;
+}
+.formgroup
+{
+    width: 70%;
+    float: left;
+}
+.formgruopdki
+{
+    width: 100%;
+    float: left;
+}
+#namedangnhap
+{
+     box-shadow: 0px 1px 1px #ccc, 0px -1px 1px #ccc, 1px 0px 1px #ccc;
+     width: 100%;
+    float: left;
+     padding-left: 35px;
+    padding-top: 5px;
+    height: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    font-family: UTM_Avo;
+    padding-left: 35px;
+    padding-top: 5px;
+    margin-top: 15px;
+     background: url(../img/iconname1.png) no-repeat 7px 50% #ffffff;
+}
+#passdangnhap ,#matkhaucu,#matkhaumoi,#nhaplaimatkhaumoi
+{
+         box-shadow: 0px 1px 1px #ccc, 0px -1px 1px #ccc, 1px 0px 1px #ccc;
+     width: 100%;
+    float: left;
+     padding-left: 35px;
+    padding-top: 5px;
+    height: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    font-family: UTM_Avo;
+    padding-left: 35px;
+    padding-top: 5px;
+    margin-top: 15px;
+     background: url(../img/iconkey1.png) no-repeat 7px 50% #ffffff;
+}
+.remember_forget {
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    float: left;
+}
+.remember_forget ul
+{
+    padding-left: 0;
+    list-style: none;
+}
+.remember_forget ul li
+{
+    display: inline;
+}
+.remember_forget label {
+    font-weight: normal;
+    color: #666666;
+}
+.remember_forget ul li:after {
+    content: '|';
+    padding: 0 8px;
+}
+.remember_forget ul li:last-child:after{
+    content: '';
+}
+.remember_forget input[type=checkbox], .remember_forget input[type=radio] {
+    margin-right: 5px;
+}
+.remember_forget ul li a,.remember_forget ul li label
+{
+    font-size: 14px;
+    color: #000;
+    font-family: UTM_Avo;
+    font-weight: bold;
+}
+.formLogin .row_input {
+    margin-bottom: 10px;
+}
+#btndangnhap
+{
+    border: none;
+    outline: none;
+    width: 150px;
+    padding: 10px;
+    background: #80b84b;
+    color: #fff;
+    font-size: 14px;
+    font-family: UTM_Avo;
+    text-transform: uppercase;
+
+}
+#btndangnhap:hover
+{
+    color: #80b84b;
+    border: 1px solid #80b84b;
+}
+#btndangky,#btntt,#btnDN
+{
+    border: none;
+    outline: none;
+    width: 150px;
+    padding: 10px;
+    background: #80b84b;
+    color: #fff;
+    font-size: 14px;
+    font-family: UTM_Avo;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+#btndangky:hover,#btnDN:hover
+{
+    color: #333;
+    border: 1px solid #80b84b;
+    background: #fff;
+}
+#btntt:hover
+{
+    color: #80b84b;
+    border: 1px solid #80b84b;
+}
+
+#emaildki,#emailtt
+{
+     box-shadow: 0px 1px 1px #ccc, 0px -1px 1px #ccc, 1px 0px 1px #ccc;
+     width: 100%;
+    float: left;
+    height: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    font-family: UTM_Avo;
+    padding-left: 35px;
+    padding-top: 5px;
+    margin-top: 15px;
+        background: url(../img/iconmail1.png) no-repeat 7px 50% #ffffff;
+}
+#phonedki,#phonett
+{
+       box-shadow: 0px 1px 1px #ccc, 0px -1px 1px #ccc, 1px 0px 1px #ccc;
+     width: 100%;
+    float: left;
+     padding-left: 35px;
+    padding-top: 5px;
+    height: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    font-family: UTM_Avo;
+ padding-left: 35px;
+    padding-top: 5px;
+    margin-top: 15px;
+     background: url(../img/iconphone1.png) no-repeat 7px 50% #ffffff;
+}
+#hotendki,#hotentt
+{
+       box-shadow: 0px 1px 1px #ccc, 0px -1px 1px #ccc, 1px 0px 1px #ccc;
+     width: 100%;
+    float: left;
+     padding-left: 35px;
+    padding-top: 5px;
+    height: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    font-family: UTM_Avo;
+    padding-left: 35px;
+    padding-top: 5px;
+    margin-top: 15px;
+     background: url(../img/iconname1.png) no-repeat 7px 50% #ffffff;
+}
+#diachidki,#diachitt
+{    box-shadow: 0px 1px 1px #ccc, 0px -1px 1px #ccc, 1px 0px 1px #ccc;
+     width: 100%;
+    float: left;
+     padding-left: 35px;
+    padding-top: 5px;
+    height: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    font-family: UTM_Avo;
+    padding-left: 35px;
+    padding-top: 5px;
+    margin-top: 15px;
+     background: url(../img/icondiachi1.png) no-repeat 7px 50% #ffffff;
+
+}
+
+#matkhaudki,#nhaplaimkdki
+{
+        box-shadow: 0px 1px 1px #ccc, 0px -1px 1px #ccc, 1px 0px 1px #ccc;
+     width: 100%;
+    float: left;
+     padding-left: 35px;
+    padding-top: 5px;
+    height: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    font-family: UTM_Avo;
+    padding-left: 35px;
+    padding-top: 5px;
+    margin-top: 15px;
+     background: url(../img/iconkey1.png) no-repeat 7px 50% #ffffff;
+}
+
+@media only screen and (max-width: 476px) and (min-width: 1px){
+.hinhdd {
+    display: none;
+}
+.formgroup
+{
+    width: 100%;
+    float: left;
+}
+}

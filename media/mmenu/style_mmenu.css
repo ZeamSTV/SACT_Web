@@ -1,0 +1,405 @@
+.mm-list > li > a, .mm-list > li > span
+
+{
+
+    color: white;
+
+    text-transform: capitalize;
+
+    font-size: 16px;
+
+    text-transform: uppercase;
+
+}
+
+.mm-search
+
+{
+
+    position: relative;
+
+}
+
+.mm-search input
+
+{
+
+    color: #313131;
+
+    font-size: 14px;
+
+    font-family: tahoma;
+
+    text-indent: 20px;
+
+}
+
+.mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-search):not(.mm-noresults):after 
+
+{
+
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+
+}
+
+.mm-list a.mm-subopen:after, .mm-list a.mm-subclose:before
+
+{
+
+    border-color: #000;
+
+}
+
+.mm-menu .mm-list
+
+{
+
+    padding-top: 0px;
+
+}
+
+.mm-menu .mm-list > li > a.mm-subclose
+
+{
+
+    color: white;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    padding: 10px 10px 10px 20px;
+
+    margin-top: 0px;
+
+    font-weight: bold;
+
+}
+
+.mm-menu .mm-list > li > a.mm-subopen:after, .mm-menu .mm-list > li > a.mm-subclose:before
+
+{
+
+    border-color: #000; margin-bottom: -5px
+
+}
+
+.mm-menu .mm-list > li > a.mm-subopen:before 
+
+{
+
+    border-color: rgba(255, 255, 255, 0.24);
+
+}
+
+.mm-menu .mm-list > li > a.mm-subopen:after, .mm-menu .mm-list > li > a.mm-subclose:before 
+
+{
+
+    border-color: white;
+
+}
+
+.mm-list > li:not(.mm-subtitle):not(.mm-label):not(.mm-search):not(.mm-noresults):after
+
+{
+
+    margin-left: 0px;
+
+}
+
+.mm-list > li.active > a
+
+{
+
+    background-color: #DC1616;
+
+    color: white;
+
+}
+
+.mm-menu
+
+{
+
+    background: rgba(35,69,102,0.6);
+
+}
+
+.mm-menu::-webkit-scrollbar
+
+{
+
+    width: 6px;
+
+}
+
+.mm-menu::-webkit-scrollbar-thumb
+
+{
+
+    background-color: #3FBA78;
+
+}
+
+.mm-menu > .mm-list:after
+
+{
+
+    height: 0px;
+
+}
+
+#mobilemenu
+
+{
+
+    padding-left: 65px;
+
+    background: #0068ff;
+
+    position: relative;
+
+}
+
+a.home2
+
+{
+
+    position: absolute;
+
+    top: 9px;
+
+    left: 18px;
+
+}
+
+a.home2 i
+
+{
+
+    color: #fff;
+
+    font-size: 30px;
+
+}
+
+.hotline-rp
+
+{
+
+    position: absolute;
+
+
+
+    top: 13px;
+
+    right: 10px;
+
+    color: #fff;
+
+    /*font-size: 16px;*/
+
+    font-size: 18px;
+
+}
+
+#hamburger
+
+{
+
+    display: block;
+
+    width: 100%;
+
+    height: 45px;
+
+    z-index: 999;
+
+
+
+}
+
+#hamburger b
+
+{
+
+    text-transform: uppercase;
+
+    color: #F4F4F4;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    padding-left: 65px;
+
+    display: inline-block;
+
+    padding-top: 11px;
+
+}
+
+#hamburger:before, #hamburger:after, #hamburger span {
+    background: #f00;
+    content: '';
+    display: block;
+    width: 35px;
+    height: 4px;
+    position: absolute;
+}
+
+#hamburger:before {
+    top: 4px;
+}
+
+#hamburger span
+
+{
+
+    top: 16px;
+
+}
+
+#hamburger:after {
+    top: 28px;
+}
+
+/* Hamburger animation */
+
+#hamburger:before, #hamburger:after, #hamburger span {
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    -webkit-transition-property: transform, top, bottom, left, opacity;
+    transition-property: transform, top, bottom, left, opacity;
+}
+
+html.mm-opening #hamburger:before, html.mm-opening #hamburger:after
+
+{
+
+    top: 22px;  
+
+}
+
+html.mm-opening #hamburger span
+
+{
+
+    left: -50px;
+
+    opacity: 0;
+
+}
+
+html.mm-opening #hamburger:before
+
+{
+
+    transform: rotate( 45deg );
+
+}
+
+html.mm-opening #hamburger:after
+
+{
+
+    transform: rotate( -45deg );
+
+}
+
+
+
+div#search_mobi
+
+{
+
+    position:relative;
+
+    z-index:100;
+
+    background:rgba(255, 255, 255, 0.2);
+
+    height:30px;
+
+    margin:0px 5%;
+
+    width:90%;
+
+        margin-top: 10px;
+
+    border-radius:22px;
+
+float: left;
+
+}
+
+div#search_mobi input
+
+{
+
+    padding:0px 2% 0 2%;
+
+    float:left;
+
+    height:30px;
+
+    line-height:30px;
+
+    border:none;
+
+    background:none;
+
+    width:81%;
+
+    outline:none;
+
+    color:#fff;
+
+    text-align:center;
+
+}
+
+div#search_mobi i
+
+{
+
+    padding:7px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#search_mobi ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+
+  color: #fff;
+
+}
+
+#search_mobi ::-moz-placeholder { /* Firefox 19+ */
+
+  color: #fff;
+
+}
+
+#search_mobi :-ms-input-placeholder { /* IE 10+ */
+
+  color: #fff;
+
+}
+
+#search_mobi :-moz-placeholder { /* Firefox 18- */
+
+  color: #fff;
+
+}
