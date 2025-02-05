@@ -800,6 +800,7 @@ input.soluong
     border: 1px solid #dedede;
     text-align: center;
 }
+
 .tbl_giohang{text-align:center; background:#f1f1f1; width:100%; font-size:13px; margin-bottom:20px; border:1px solid #DDD; border-collapse:collapse; padding:1px; }
 .tbl_giohang td{ border:1px solid #f1f1f1;}
 .tbl_giohang .dong_gh{ background:#fff;}
