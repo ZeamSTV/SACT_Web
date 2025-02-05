@@ -17,9 +17,9 @@ class mydb
 	
 	
 	var $servername = "localhost";
-	var $username = "root";
+	var $username = "hanghoa_1";
 	var $password = "admin";
-	var $database = "dacnhantam";
+	var $database = "hanghoa_1";
 	
 	/*
 	var $servername = "localhost";

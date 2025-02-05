@@ -381,9 +381,9 @@ require_once _source . "language/lang_$lang.php";
 
 </div>
 
-
+<!-- 
     <?php include_once _template."layout/menu/menure.php"; ?>
-
+ -->
 
 
 <?php include_once _template."layout/js.php"; ?>

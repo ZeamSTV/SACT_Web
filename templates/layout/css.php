@@ -151,13 +151,13 @@
                width: 100%;
                height: 70px;
                }
-               #footer .logo-background{background: #fff; border-radius: 10px;}
+               /* #footer .logo-background{background: #fff; border-radius: 10px;}
                @media screen and (max-width:894px){
                .section2 .cot1 h3{font-size: 26px;}
                .note-box{left: -30px;}
                .flickity-viewport, .custome-slide .banner{height: 300px !important;}
                .custome-slide .text-box{width: 90% !important}
-               }
+               } */
                .sidebar-wrapper ul.menu>li li.active a{color: red;}
                .sidebar-wrapper .menu a{text-transform: uppercase; font-size: 16px;}
                td{color: #333;}
@@ -349,32 +349,33 @@ span#fcta-zalo-tracking {
     background-size: cover;
     background-color: #252628;
     color: #ffffff;
-}.footer, .footer p {
+}
+.footer, .footer p {
     font-size: 18px!important;
     line-height: 26px!important;
     text-align: justify;
 }
 
 
-.footer {
+/* .footer {
     margin: 0 auto;
     position: relative;
     padding: 0;
     clear: both;
     background-position: center center
-}
-
+} */
+/* 
 .footer a {
     text-decoration: none
-}
+} */
 
-.swm-footer-bg {
+/* .swm-footer-bg {
     float: left;
     width: 100%;
     text-align: center
-}
+} */
 
-.swm-footer-widget {
+/* .swm-footer-widget {
     margin-bottom: 40px;
     text-align: left
 }
@@ -395,9 +396,9 @@ span#fcta-zalo-tracking {
 .swm-footer-widget h3 span {
     position: relative;
     padding: 0
-}
+} */
 
-.footer ul {
+/* .footer ul {
     padding: 0;
     margin: 0
 }
@@ -416,9 +417,9 @@ span#fcta-zalo-tracking {
 
 .footer .swm-list-widgets div>ul {
     margin-top: -5px
-}
+} */
 
-.footer .swm-list-widgets ul li::before {
+/* .footer .swm-list-widgets ul li::before {
     content: "\f054";
     font-weight: 700;
     font-family: 'Font Awesome 5 Free';
@@ -442,9 +443,9 @@ span#fcta-zalo-tracking {
 .footer ul ul {
     padding-left: 0;
     margin: 0
-}
+} */
 
-.footer ul ul li,.footer ul ol li,.footer ol ol li,.footer ol ul li {
+/* .footer ul ul li,.footer ul ol li,.footer ol ol li,.footer ol ul li {
     margin-bottom: 0
 }
 
@@ -458,7 +459,7 @@ span#fcta-zalo-tracking {
     background: none;
     line-height: normal;
     padding: 10px 12px
-}
+} */
 
 a.swm-go-top-scroll-btn {
     padding: 1px;
@@ -476,7 +477,7 @@ a.swm-go-top-scroll-btn {
     border-radius: 0
 }
 
-.swm-large-footer {
+/* .swm-large-footer {
     padding: 100px 0 5px 0;
     margin: 0 -15px;
     display: -webkit-box;
@@ -500,9 +501,9 @@ a.swm-go-top-scroll-btn {
     -moz-align-items: normal;
     -ms-align-items: normal;
     align-items: normal
-}
+} */
 
-.swm-large-footer .swm-f-widget,.swm-large-footer .swm-f-widget:not(:last-child) {
+/* .swm-large-footer .swm-f-widget,.swm-large-footer .swm-f-widget:not(:last-child) {
     margin: 0 15px 20px
 }
 
@@ -520,9 +521,9 @@ a.swm-go-top-scroll-btn {
 
 .swm-large-footer.col-4 .swm-f-widget {
     width: calc(25% - 30px)
-}
+} */
 
-.swm-large-footer.col-66-33 .swm-f-widget:nth-child(odd) {
+/* .swm-large-footer.col-66-33 .swm-f-widget:nth-child(odd) {
     width: calc(66.6% - 30px)
 }
 
@@ -564,9 +565,9 @@ a.swm-go-top-scroll-btn {
 
 .swm-large-footer.col-25-50-25 .swm-f-widget {
     width: calc(25% - 30px)
-}
+} */
 
-.swm-large-footer.col-25-50-25 .swm-f-widget:nth-child(2),.swm-large-footer.col-25-50-25 .swm-f-widget:nth-child(3n+2) {
+/* .swm-large-footer.col-25-50-25 .swm-f-widget:nth-child(2),.swm-large-footer.col-25-50-25 .swm-f-widget:nth-child(3n+2) {
     width: calc(50% - 30px)
 }
 
@@ -588,9 +589,9 @@ a.swm-go-top-scroll-btn {
 
 .swm-large-footer.col-51-38-38-54-49 .swm-f-widget:nth-child(5n) {
     width: calc(20.42% - 30px)
-}
+} */
 
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
     .swm-large-footer {
         padding-top:80px
     }
@@ -606,9 +607,9 @@ a.swm-go-top-scroll-btn {
     #footer .swm-large-footer.col-51-38-38-54-49 .swm-f-widget:nth-child(5n) {
         width: calc(66.6666% - 30px)
     }
-}
+} */
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .swm-large-footer {
         width:calc(100% + 30px)
     }
@@ -638,7 +639,7 @@ a.swm-go-top-scroll-btn {
 
 .swm_contact_footer .swm_contact_footer_holder.swm_row {
     margin: 0
-}
+} */
          .swm-f-widget > div {
 vertical-align: top;
 }
@@ -647,9 +648,9 @@ vertical-align: top;
 width: 100%;
 display: block;
 } 
-.swm-f-widget > div .swm-footer-widget{
+/* .swm-f-widget > div .swm-footer-widget{
 margin-bottom: 0px!important;
-}
+} */
 .swm-f-widget > div:nth-child(2), .swm-f-widget > div:nth-child(3) {
 width: 49%;
 display: inline-block;
@@ -675,19 +676,19 @@ text-align: left;
 float: none;
 text-align: left;
 }
-.swm-large-footer {
+/* .swm-large-footer {
 padding: 20px 0 5px 0;
+} */
 }
-}
-.swm-f-widget > div:nth-child(5) .swm-footer-widget h3,
+/* .swm-f-widget > div:nth-child(5) .swm-footer-widget h3,
 .swm-f-widget > div:nth-child(6) .swm-footer-widget h3,
 .swm-f-widget > div:nth-child(7) .swm-footer-widget h3,
-.swm-f-widget > div:nth-child(8) .swm-footer-widget h3,
+.swm-f-widget > div:nth-child(8) .swm-footer-widget h3, */
 {
 font-size: 18px!important;
 margin-bottom: 10px!important;
 }
-.footer ul li {
+/* .footer ul li {
 position: relative;
 padding: 5px 0;
 margin-left: 0;
@@ -710,7 +711,7 @@ font-weight: 700;
 text-rendering: optimizeLegibility;
 margin-bottom: 20px;
 margin-top: 0;
-}
+} */
 @media (max-width: 768px) {
 .swm-f-widget > div:nth-child(2) {
 padding-right: 20px;
@@ -726,7 +727,7 @@ padding-right: 0px;
 .swm-f-widget > div:nth-child(3) {
 padding-left: 0px;
 } 
-.footer .swm-footer-widget h3, .footer .swm-footer-widget h1, .footer .swm-footer-widget .cstitle {
+/* .footer .swm-footer-widget h3, .footer .swm-footer-widget h1, .footer .swm-footer-widget .cstitle {
 font-size: 18px!important;
 text-align: center!important;
 }
@@ -755,8 +756,8 @@ padding-left: 0;
 @media screen and (max-width: 991px) {
 #footer .swm-large-footer .swm-f-widget {
 width: 100%;
-}
-}   .swm-small-footer {
+} */
+/* }   .swm-small-footer {
     min-height: 67px;
     padding: 25px 0 25px;
     text-align: center;
@@ -766,7 +767,7 @@ width: 100%;
 .footer .swm-small-footer {
     font-size: 14px;
     color: #aaaaaa;
-}
+} */
 .header-bottom {           
     background-color: rgba(196,9,15,1);            
     background: #ec1c3c;            

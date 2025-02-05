@@ -146,28 +146,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @define ('_khachhangnoi',"Khách hàng nói về chúng tôi");
 
 @define ('_csbh',"Chính sách bán hàng");
@@ -870,7 +848,13 @@ Danh mục ");
 
 @define ( _newsletter , "Đăng ký nhận tin" );
 
+// newFOOTER
 
+define("_aboutus", "Về chúng tôi");
+define("_companyname", "CÔNG TY CP GIAO DỊCH HÀNG HÓA  ĐÔNG NAM Á (SACT)");
+define("_companydes", "Thành viên kinh doanh chính thức của Sở Giao Dịch Hàng Hoá Việt Nam (MXV).");
+define("_kienthuc", "Kiến thức");
+define("_hotro", "Hỗ Trợ");
 
 
 
@@ -1108,6 +1092,15 @@ Danh mục ");
 @define ( _taikhoan, "Tài khoản");
 
 @define ( _emaildk, "Nhập email của bạn");
+
+
+
+
+
+
+
+
+
 
 
 
