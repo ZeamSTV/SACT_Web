@@ -4,7 +4,7 @@
         <link rel="stylesheet" type="text/css" href="css.php">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <div id="masthead" class="header-main">
-            <div class="header-inner container flex-row" style="display: flex;  align-items: center; justify-content: space-between;height: 100px;">
+            <div class="header-inner container flex-row" style="display: flex;  align-items: center; justify-content: space-around;height: 100px; max-width: 100%;">
                 <!-- Logo -->
                 <div id="logo" class="logo" style="flex: 1; text-align: left;">
                     <a href="" title="<?=$company['title_vi']?>" rel="home">
@@ -36,7 +36,7 @@
                
                     <div class="info-item">
                         <i class="fas fa-clock" style="color: #c4090f;"></i>
-                        <span>08:30 - 17:30 (Thứ 2 - Thứ 6)</span>
+                        <span style="color: #000">08:30 - 17:30 (Thứ 2 - Thứ 6)</span>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone-volume" style="color: #c4090f;"></i>

@@ -2,7 +2,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <div class="trang-ch">
-    <div class="banner" style="background: url(banner0.png) center; background-size: cover; background-repeat: no-repeat;">
+    <div class="banner" style="background: url(https://png.pngtree.com/thumb_back/fw800/background/20191120/pngtree-financial-fashion-simple-stock-market-webpage-advertising-banner-background-image_322675.jpg) center; background-size: cover; background-repeat: no-repeat;">
         <svg class="arrow-chevron-left" width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M33.8733 35.818L21.8089 23.9999L33.8733 12.1817L30.625 9L15.3125 23.9999L30.625 39L33.8733 35.818Z" fill="white" />
         </svg>
@@ -260,18 +260,22 @@
     </div>
     <div class="rectangle-2">
     </div>
-    <div class="ch-a-co-ta-i-khoa-n"> Chưa có tài khoản? </div>
-    <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể đạt lợi nhuận mỗi tháng. </div>
-    <div class="button2">
-        <div class="state-layer2">
-            <div class="label-text2"> Đăng ký </div>
+    <div class="rectangle-container">
+        <div class="ch-a-co-ta-i-khoa-n"> Chưa có tài khoản? </div>
+        <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể đạt lợi nhuận mỗi tháng. </div>
+        <div class="button2">
+            <div class="state-layer2">
+                <div class="label-text2"> Đăng ký </div>
+            </div>
         </div>
     </div>
+  
 </div>
 <style>
    .trang-ch,
 .trang-ch * {
     box-sizing: border-box;
+    
 }
 
 .trang-ch {
@@ -284,10 +288,11 @@
 .banner {
     padding: 230px 18px 230px 18px;
     display: flex;
+    max-width: 100%;
+    width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 1440px;
     height: 508px;
     position: absolute;
     left: 0px;
@@ -987,6 +992,10 @@
     position: absolute;
     left: 0px;
     top: 3629px;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .ch-a-co-ta-i-khoa-n {
