@@ -1,6 +1,8 @@
+
 <header id="header" class="header has-sticky sticky-jump" style="background-color: #ffffff;">
     <div class="header-wrapper" style="height: auto">
         <link rel="stylesheet" type="text/css" href="css.php">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <div id="masthead" class="header-main">
             <div class="header-inner container flex-row" style="display: flex;  align-items: center; justify-content: space-between;height: 100px;">
                 <!-- Logo -->
@@ -12,10 +14,10 @@
 
                 <!-- Navigation Menu -->
                 <nav class="nav header-nav" style="flex: 6; display: flex; justify-content: center;">
-                    <ul class="header-nav-main nav" style="display: flex; list-style: none; padding: 0; margin: 0;">
+                    <ul class="header-nav-main nav" style="display: flex; list-style: none; padding: 0; margin: 0;font-size: 13px;">
                         <li><a href="" class="nav-link">Trang chủ</a></li>
                         <li><a href="gioi-thieu" class="nav-link">Giới thiệu</a></li>
-                        <li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-462 menu-item-design-default has-dropdown" style="padding: 0">
+                        <li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-462 menu-item-design-default has-dropdown" style="padding: 0;bottom:2px;">
                             <a href="san-pham" class="nav-link">Sản phẩm<i class="icon-angle-down"></i></a>
                             <ul class="sub-menu nav-dropdown nav-dropdown-default">
                                 <?php foreach ($cat_main as $key => $v) {?>
@@ -30,7 +32,7 @@
                 </nav>
 
                 <!-- Contact Info -->
-                <div class="contact-info" style="flex: 2; display: flex; justify-content: flex-end; gap: 30px;">
+                <div class="contact-info" style="flex: 2; display: flex; justify-content: flex-end; gap: 30px;font-size: 14px;">
                
                     <div class="info-item">
                         <i class="fas fa-clock" style="color: #c4090f;"></i>
@@ -43,7 +45,7 @@
                 </div>
 
                 <!-- User Actions -->
-                <div class="user-actions" style="flex: 1.5; display: flex; justify-content: flex-end;">
+                <div class="user-actions" style="flex: 2.5; display: flex; justify-content: flex-end;">
                     <?php if (!isset($_SESSION['login1']['id'])) { ?>
                         <a href="dang-ky.html" class="user-link">Đăng ký</a>
                         <span style="margin: 0 5px;">|</span>
@@ -92,37 +94,76 @@
 
 
 /* Sub-menu cơ bản */
+/* Cải tiến dropdown menu */
 .sub-menu {
-    display: none; 
+    display: none;
     position: absolute;
-    top: 100%; /
+    top: 100%;
     left: 0;
-    z-index: 1000;
-    min-width: 200px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    min-width: 220px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
+    transition: all 0.3s ease-in-out;
 }
 
-
+/* Khi hover vào menu chính, hiển thị dropdown */
 .menu-item-has-children:hover .sub-menu {
-    display: block; 
+    display: block;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-
+/* Sub-menu item */
 .sub-menu li {
     position: relative;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
 }
+
+/* Link trong sub-menu */
+.sub-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hiệu ứng khi hover vào sub-menu item */
+.sub-menu li:hover {
+    background-color:rgb(240, 106, 106);
+    border-radius: 8px;
+}
+
+/* Hiệu ứng hover icon */
+.sub-menu li a i {
+    margin-right: 8px;
+    color: #c4090f;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sub-menu li:hover a i {
+    transform: scale(1.2);
+}
+
+/* Mũi tên icon đẹp hơn */
+.menu-item-has-children > a i {
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item-has-children:hover > a i {
+    transform: rotate(180deg);
+}
+
 
 .sub-menu-link {
     text-decoration: none;
@@ -188,6 +229,56 @@
 .header-nav .menu-item > .sub-menu li:hover > .sub-menu {
     visibility: visible;
     opacity: 1;
+}
+/* Container chứa hai nút */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Thiết kế chung cho nút */
+.user-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Nút Đăng ký */
+.user-link:first-child {
+    background-color: #c4090f;
+    color: white;
+    border: 2px solid #c4090f;
+}
+
+.user-link:first-child:hover {
+    background-color: white;
+    color: #c4090f;
+    box-shadow: 0px 4px 10px rgba(196, 9, 15, 0.3);
+}
+
+/* Nút Đăng nhập */
+.user-link:last-child {
+    background-color: white;
+    color: #c4090f;
+    border: 2px solid #c4090f;
+}
+
+.user-link:last-child:hover {
+    background-color: #c4090f;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(196, 9, 15, 0.3);
+}
+
+/* Khoảng cách giữa 2 nút */
+.user-actions span {
+    font-weight: bold;
+    color: #c4090f;
 }
 
     </style>

@@ -129,6 +129,8 @@ require_once _source . "language/lang_$lang.php";
 <html>
 
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/flatsome.css?v=2">
 
       <base href="http://<?= $config_url ?>/"  />
 
@@ -235,6 +237,10 @@ require_once _source . "language/lang_$lang.php";
 
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel=stylesheet>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51d3c996345f1d03" async="async"></script>
 
    <?php include_once _template."layout/css.php"; ?>
@@ -341,30 +347,8 @@ require_once _source . "language/lang_$lang.php";
 <div id="wrapper" >
 
 
-
-
-
-
 					<?php include_once _template."layout/header.php"; ?>
 
-
-
-
-
-        
-
-
-
-			
-
-
-
-        
-
-
-
-
-      
                       <main id="main" class="">
                 
                            <div id="content" role="main" class="content-area">     
@@ -374,8 +358,6 @@ require_once _source . "language/lang_$lang.php";
                           </div>
              
                      </main> 
-
-
     <?php include_once _template."layout/footer.php"; ?>
 
 
