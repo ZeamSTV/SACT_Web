@@ -1,92 +1,157 @@
-<?php
-include "./sources/language/lang_vi.php"; 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo _aboutus; ?></title>
-    <meta name="theme-color" content="#000000">
+    <title>Footer Design</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0A2742;
+            color: #ffffff;
+        }
+
+        .footer {
+            background-color: #0A2742;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-bottom: 1px solid #ffffff;
+            padding-bottom: 20px;
+        }
+
+        .footer .logo-section {
+            flex: 1;
+            min-width: 200px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer .logo-section img {
+            width: 80px;
+        }
+
+        .footer .logo-section div {
+            text-align: left;
+        }
+
+        .footer .column {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .footer .column h4 {
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .footer .column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer .column ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer .column ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer .column ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .connect {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+
+        .footer .connect h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .footer .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .footer .address {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <footer class="footer">
         <div class="content">
-            <header class="header">
-                <img src="./img/sact_logo.png" alt="sact_logo" class="footer_logo" />
-                <div class="rowaboutus">
-                    <div class="collumnaboutus">
-                        <p class="ui text size-texts"><?php echo _aboutus; ?></p>
-                        <p class="description-3 ui heading size-headingxs">
-                            <span><?php echo _companyname; ?><br /></span>
-                            <span class="footer_description-span-1">
-                                <br/><?php echo _companydes; ?></span>
-                        </p>
-                    </div>
-                
-                    <div class="footer_links">
-                        <div class = "kienthuccollumn-1">
-                            <p class="ui text size-texts"><?php echo _kienthuc; ?></p>
-                            <ul class="giaodich">
-                                <li>
-                                    <a href="#">
-                                        <p class="ui text size-textxs">Giao dịch hàng hóa</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p class="ui text size-textxs">Phân tích cơ bản</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p class="ui text size-textxs">Giao dịch hàng hóa</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class = "hotrocollumn-1">
-                            <p class="ui text size-texts"><?php echo _hotro; ?></p>
-                            <ul class="giaodich-2">
-                                <li>
-                                    <a href="#">
-                                        <p class="ui text size-textxs">Giao dịch hàng hóa</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p class="ui text size-textxs">Phân tích cơ bản</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <p class="ui text size-textxs">Giao dịch hàng hóa</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="logo-section">
+                <img src="./img/sact_logo.png" alt="SACT Logo">
+                <div>
+                    <h4>Về chúng tôi</h4>
+                    <p>CÔNG TY CP GIAO DỊCH HÀNG HÓA<br>
+                        ĐÔNG NAM Á (SACT)<br>
+                        Thành viên kinh doanh chính thức của Sở Giao Dịch Hàng Hoá Việt Nam (MXV).
+                    </p>
                 </div>
-            </header>
-            <div class="collumnlineone">
-                <div class="collumnline-1"></div>
-                <p class="connect-1 ui text size-texts">CONNECT</p>
-                <div class="footer_social-row">
-                    <img src="./img/x-logo.png" alt="x" class="footer_x-icon"/>
-                    <img src="img/178-copy-8-15675637927.png" alt="facebook" class="footer_fb-icon"/>
-                    <img src="img/178-copy-10-15675638514.png" alt="youtube" class="footer_yt-icon"/>
-                </div>
-                <p class="description-2 ui text size-texts">
-                    Trụ sở chính: CT36A, Định Công, Hoàng Mai, Hà Nội<br />
-                    CN HN1: 25 Sunrise B, The Manor Central Park, Hoàng Mai, Hà Nội<br />
-                    CN Hồ Chí Minh: Tầng 2, số 75 Hoàng Văn Thụ, Phường 15, Q. Phú Nhuận, TP HCM
-                </p>
+            </div>
+
+            <div class="column">
+                <h4>Kiến thức</h4>
+                <ul>
+                    <li><a href="#">Giao dịch hàng hóa</a></li>
+                    <li><a href="#">Phân tích cơ bản</a></li>
+                    <li><a href="#">Just a simple test for texts</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>Hỗ Trợ</h4>
+                <ul>
+                    <li><a href="#">Giao dịch hàng hóa</a></li>
+                    <li><a href="#">Phân tích cơ bản</a></li>
+                    <li><a href="#">Just a simple test for texts</a></li>
+                </ul>
             </div>
         </div>
-        
-        </div>
-        
-    </footer>
 
+        <div class="connect">
+            <h4>Connect</h4>
+            <div class="social-icons">
+                <img src="./img/twitter_icon.png" alt="Twitter">
+                <img src="./img/facebook_icon.png" alt="Facebook">
+                <img src="./img/youtube_icon.png" alt="YouTube">
+            </div>
+        </div>
+
+        <div class="address">
+            Trụ sở chính: CT36A, Định Công, Hoàng Mai, Hà Nội<br>
+            CN HN1: 25 Sunrise B, The Manor Central Park, Hoàng Mai, Hà Nội<br>
+            CN Hồ Chí Minh: Tầng 2, số 75 Hoàng Văn Thụ, Phường 15, Q. Phú Nhuận, TP HCM
+        </div>
+    </footer>
 </body>
 </html>
