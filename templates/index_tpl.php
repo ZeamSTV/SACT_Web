@@ -945,7 +945,7 @@ $cards = [
 .about-section {
     padding: 80px 0;
     position: relative;
-    top: 1050px;
+    top: 950px;
 }
 
 .section-container {
@@ -964,8 +964,9 @@ $cards = [
 }
 
 .section-subtitle {
-    color: #d0172e;
-    font-size: 1.2rem;
+    color: #000;
+    font-weight: 800;
+    font-size: 48px;
     margin-bottom: 15px;
 }
 
@@ -1042,11 +1043,12 @@ $cards = [
     line-height: 1.5;
 }
 .tradingview-widget-wrapper {
+    position: absolute;
     overflow: hidden;
     border-radius: 6px;
     margin: 0 auto;
     position: relative;
-    top:2320px;
+    top:2260px;
 }
 
 .tradingview-widget-container {
