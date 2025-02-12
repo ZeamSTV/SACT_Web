@@ -1,5 +1,3 @@
-
-
  <div id="col-437943583" class="col medium-3 small-12 large-3" style="padding-left: 30px;">
             <div class="col-inner">
                <ul class="sidebar-wrapper ul-reset">

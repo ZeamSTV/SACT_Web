@@ -1489,7 +1489,7 @@ li.current-dropdown>.nav-dropdown,
 	border-right: 1px solid transparent
 }
 
-.nav-dropdown .menu-item-has-children>a,
+
 .nav-dropdown .title>a,
 .nav-dropdown .nav-dropdown-col>a {
 	text-transform: uppercase;
@@ -1498,9 +1498,6 @@ li.current-dropdown>.nav-dropdown,
 	color: #000
 }
 
-.nav-dropdown .nav-dropdown-col .menu-item-has-children {
-	margin-top: 5px
-}
 
 .nav-dropdown li.image-column {
 	margin: 0 !important;
@@ -1580,9 +1577,6 @@ li.current-dropdown>.nav-dropdown,
 	padding: 0 20px 10px
 }
 
-.menu-item-has-block .nav-dropdown {
-	padding: 0
-}
 
 li.current-dropdown>.nav-dropdown-full,
 li.has-dropdown:hover>.nav-dropdown-full {

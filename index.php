@@ -129,9 +129,8 @@ require_once _source . "language/lang_$lang.php";
 <html>
 
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="/assets/css/flatsome.css?v=2">
-<link rel="stylesheet" id="footer-wrapper" href="/css/footer.css" media="all">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" id="flatsome-main-css" href="assets/css/flatsome.css" type="text/css" media="all">
 
       <base href="http://<?= $config_url ?>/"  />
 

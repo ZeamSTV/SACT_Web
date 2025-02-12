@@ -17,11 +17,11 @@
                     <ul class="header-nav-main nav" style="display: flex; list-style: none; padding: 0; margin: 0;font-size: 13px;">
                         <li><a href="" class="nav-link">Trang chủ</a></li>
                         <li><a href="gioi-thieu" class="nav-link">Giới thiệu</a></li>
-                        <li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-462 menu-item-design-default has-dropdown" style="padding: 0;bottom:2px;">
-                            <a href="san-pham" class="nav-link">Sản phẩm<i class="icon-angle-down"></i></a>
-                            <ul class="sub-menu nav-dropdown nav-dropdown-default">
+                        <li id="menu-i" class="menu-i menu-i-type-post_type menu-i-object-page menu-i-has-children menu-i menu-i-design-default has-dropdown" style="padding: 0;bottom:2px;">
+                            <a href="san-pham" class="nav-link" style="padding-bottom: 6px;">Sản phẩm<i class="fa fa-chevron-down"></i></a>
+                            <ul class="sub-menu nav-drop nav-drop-default">
                                 <?php foreach ($cat_main as $key => $v) {?>
-                                    <li id="menu-item-461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-461" style="width:250px; height:50px"><a href="<?=$v['tenkhongdau_vi']?>"><?=$v['ten_vi']?></a></li>
+                                    <li id="menu-i" class="menu-i menu-i-type-post_type menu-i-object-page menu-i" style="width:250px; height:50px"><a href="<?=$v['tenkhongdau_vi']?>"><?=$v['ten_vi']?></a></li>
                                 <?php } ?>
                             </ul>
                         </li>
@@ -62,7 +62,7 @@
 
     <style>
        /* Cấu trúc chung */
-.header {
+       .header {
     background-color: #ffffff;
     border-bottom: 1px solid #ddd;
 }
@@ -75,7 +75,6 @@ header.header {
 .nav-link {
     text-decoration: none;
     color: #000;
-    font-weight: bold;
     text-transform: uppercase;
     padding: 10px 15px;
     border-radius: 100px;
@@ -87,12 +86,12 @@ header.header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.menu-item {
+.menu-i {
     position: relative;
     padding-right: 25px;
 }
 
-.menu-item-has-children > a {
+.menu-i-has-children > a {
     position: relative;
    
 }
@@ -117,7 +116,7 @@ header.header {
 }
 
 /* Khi hover vào menu chính, hiển thị dropdown */
-.menu-item-has-children:hover .sub-menu {
+.menu-i-has-children:hover .sub-menu {
     display: block;
     opacity: 1;
     visibility: visible;
@@ -160,12 +159,12 @@ header.header {
 }
 
 /* Mũi tên icon đẹp hơn */
-.menu-item-has-children > a i {
+.menu-i-has-children > a i {
     margin-left: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
-.menu-item-has-children:hover > a i {
+.menu-i-has-children:hover > a i {
     transform: rotate(180deg);
 }
 
@@ -180,15 +179,15 @@ header.header {
 }
 
 
-.header-nav > li.menu-item {
+.header-nav > li.menu-i {
     position: relative;
 }
 
 
-.header-nav .menu-item > .sub-menu {
+.header-nav .menu-i > .sub-menu {
     display: none; 
     position: absolute;
-    top: 100%; 
+    top: 30px; 
     left: 0;
     background-color: #fff; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
@@ -201,7 +200,7 @@ header.header {
 }
 
 
-.header-nav .menu-item:hover > .sub-menu {
+.header-nav .menu-i:hover > .sub-menu {
    list-style: none;
     display: block; 
     opacity: 1; 
@@ -210,7 +209,7 @@ header.header {
 }
 
 
-.header-nav .menu-item > .sub-menu li a {
+.header-nav .menu-i > .sub-menu li a {
     color: #333; 
     padding: 10px 20px; 
     text-decoration: none; /
@@ -219,19 +218,19 @@ header.header {
 }
 
 
-.header-nav .menu-item:hover .sub-menu {
+.header-nav .menu-i:hover .sub-menu {
     transform: translateY(10px); 
 }
 
 
-.header-nav .menu-item > .sub-menu li a .icon {
+.header-nav .menu-i > .sub-menu li a .icon {
     margin-right: 8px;
-    font-size: 16px;
+    font-size: 13px;
     color: #555;
 }
 
 
-.header-nav .menu-item > .sub-menu li:hover > .sub-menu {
+.header-nav .menu-i > .sub-menu li:hover > .sub-menu {
     visibility: visible;
     opacity: 1;
 }

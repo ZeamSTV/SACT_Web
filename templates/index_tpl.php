@@ -10,115 +10,84 @@
             <path d="M14.8181 12.182L26.6362 24.0001L14.8181 35.8183L18 39L33 24.0001L18 9L14.8181 12.182Z" fill="white" />
         </svg>
     </div>
-    <div class="stacked-card">
-        <div class="card-state-layer-outlined">
-            <div class="state-layer">
+    <?php
+$cards = [
+    [
+        "title" => "Về chúng tôi",
+        "subhead" => "CÔNG TY CỔ PHẦN ĐẦU TƯ HÀNG HÓA VIỆT NAM",
+        "image" => "media0.png",
+        "description" => [
+            "Đăng ký, hướng dẫn, đặt lệnh, nộp/rút tiền và giải đáp tất cả các thắc mắc liên quan",
+            "Cung cấp thông tin thị trường, nhận định hàng ngày, khuyến nghị đầu tư",
+            "Tư vấn chiến lược hàng ngày và chiến lược dài hạn"
+        ]
+    ],
+    [
+        "title" => "Dịch vụ của chúng tôi",
+        "subhead" => "GIẢI PHÁP ĐẦU TƯ HIỆU QUẢ",
+        "image" => "media1.png",
+        "description" => [
+            "Tư vấn đầu tư cá nhân và tổ chức",
+            "Phân tích thị trường chuyên sâu",
+            "Hỗ trợ giao dịch và quản lý danh mục"
+        ]
+    ],
+    [
+        "title" => "Liên hệ với chúng tôi",
+        "subhead" => "KẾT NỐI NGAY HÔM NAY",
+        "image" => "media2.png",
+        "description" => [
+            "Hotline: 0123-456-789",
+            "Email: contact@company.com",
+            "Địa chỉ: 123 Đường ABC, TP. XYZ"
+        ]
+    ]
+];
+?>
+
+<div class="cards-container">
+    <?php foreach ($cards as $card): ?>
+        <div class="stacked-card">
+            <div class="card-state-layer-outlined">
+                <div class="state-layer"></div>
             </div>
-        </div>
-        <div class="content-container">
-            <div class="media-text-content">
-                <img class="media" style="background: url(media0.png) center; background-size: cover; background-repeat: no-repeat;" src="media0.png" />
-                <div class="text-content">
-                    <div class="headline">
-                        <div class="title"> Về chúng tôi </div>
-                        <div class="subhead"> CÔNG TY CỔ PHẦN ĐẦU TƯ HÀNG HÓA <br />VIỆT NAM </div>
-                    </div>
-                    <div class="supporting-text">
-                        <span><span class="supporting-text-span"> Chúng tôi hỗ trợ bạn:<br />
-                            </span>
-                            <ul class="supporting-text-span2">
-                                <li>Đăng ký, hướng dẫn, đặt lệnh, nộp/rút tiền và giải đáp tất cả các thắc mắc liên quan</li>
-                                <li>Cung cấp thông tin thị trường, nhận định hàng ngày, khuyến nghị đầu tư</li>
-                                <li>Tư vấn chiến lược hàng ngày và chiến lược dài hạn</li>
+            <div class="content-container">
+                <div class="media-text-content">
+                    <img class="media" src="<?= $card['image']; ?>" alt="<?= $card['title']; ?>" />
+                    <div class="text-content">
+                        <div class="headline">
+                            <div class="title"> <?= $card['title']; ?> </div>
+                            <div class="subhead"> <?= $card['subhead']; ?> </div>
+                        </div>
+                        <div class="supporting-text">
+                            <ul>
+                                <?php foreach ($card['description'] as $item): ?>
+                                    <li><?= $item; ?></li>
+                                <?php endforeach; ?>
                             </ul>
-                        </span>
-                    </div>
-                    <div class="actions">
-                        <div class="primary-button">
-                            <div class="state-layer2">
-                                <div class="label-text"> Xem thêm chi tiết </div>
+                        </div>
+                        <div class="actions">
+                            <div class="primary-button">
+                                <div class="state-layer2">
+                                    <div class="label-text cta-button"> Xem thêm chi tiết </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="stacked-card2">
-        <div class="card-state-layer-outlined">
-            <div class="state-layer">
-            </div>
-        </div>
-        <div class="content-container">
-            <div class="media-text-content">
-                <img class="media" style="background: url(media1.png) center; background-size: cover; background-repeat: no-repeat;" src="media1.png" />
-                <div class="text-content">
-                    <div class="headline">
-                        <div class="title"> Về chúng tôi </div>
-                        <div class="subhead"> CÔNG TY CỔ PHẦN ĐẦU TƯ HÀNG HÓA <br />VIỆT NAM </div>
-                    </div>
-                    <div class="supporting-text">
-                        <span><span class="supporting-text-span3"> Chúng tôi hỗ trợ bạn:<br />
-                            </span>
-                            <ul class="supporting-text-span4">
-                                <li>Đăng ký, hướng dẫn, đặt lệnh, nộp/rút tiền và giải đáp tất cả các thắc mắc liên quan</li>
-                                <li>Cung cấp thông tin thị trường, nhận định hàng ngày, khuyến nghị đầu tư</li>
-                                <li>Tư vấn chiến lược hàng ngày và chiến lược dài hạn</li>
-                            </ul>
-                        </span>
-                    </div>
-                    <div class="actions">
-                        <div class="primary-button">
-                            <div class="state-layer2">
-                                <div class="label-text"> Xem thêm chi tiết </div>
-                            </div>
-                        </div>
-                    </div>
+    <?php endforeach; ?>
+</div>
+
+            <div class="primary-button2">
+                <div class="state-layer2">
+                    <a href="san-pham" class="label-text cta-button"><span> Xem thêm chi tiết </span></a>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="stacked-card3">
-        <div class="card-state-layer-outlined">
-            <div class="state-layer">
-            </div>
-        </div>
-        <div class="content-container">
-            <div class="media-text-content">
-                <img class="media" style="background: url(media2.png) center; background-size: cover; background-repeat: no-repeat;" src="media2.png" />
-                <div class="text-content">
-                    <div class="headline">
-                        <div class="title"> Về chúng tôi </div>
-                        <div class="subhead"> CÔNG TY CỔ PHẦN ĐẦU TƯ HÀNG HÓA <br />VIỆT NAM </div>
-                    </div>
-                    <div class="supporting-text">
-                        <span><span class="supporting-text-span5"> Chúng tôi hỗ trợ bạn:<br />
-                            </span>
-                            <ul class="supporting-text-span6">
-                                <li>Đăng ký, hướng dẫn, đặt lệnh, nộp/rút tiền và giải đáp tất cả các thắc mắc liên quan</li>
-                                <li>Cung cấp thông tin thị trường, nhận định hàng ngày, khuyến nghị đầu tư</li>
-                                <li>Tư vấn chiến lược hàng ngày và chiến lược dài hạn</li>
-                            </ul>
-                        </span>
-                    </div>
-                    <div class="actions">
-                        <div class="primary-button">
-                            <div class="state-layer2">
-                                <div class="label-text"> Xem thêm chi tiết </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="primary-button2">
-        <div class="state-layer2">
-            <a href="san-pham" class="label-text cta-button"><span> Xem thêm chi tiết </span></a>
-        </div>
-    </div><img class="sideslide-01-16978617950-1" src="sideslide-01-16978617950-10.png" />
-    <div class="s-n-ph-m-giao-d-ch"> Sản phẩm giao dịch </div><img class="cafetrangchu-1" src="cafetrangchu-10.png" /><img class="bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-1" src="bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-10.png" /><img class="_26-16978617877-1" src="_26-16978617877-10.png" />
-    <div class="s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u"> Sản phẩm giao dịch của chúng tôi, và giao dịch toàn cầu </div>
+            </div><img class="sideslide-01-16978617950-1" src="sideslide-01-16978617950-10.png" />
+            <div class="s-n-ph-m-giao-d-ch"> Sản phẩm giao dịch </div><img class="cafetrangchu-1" src="cafetrangchu-10.png" /><img class="bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-1" src="bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-10.png" /><img class="_26-16978617877-1" src="_26-16978617877-10.png" />
+            <div class="s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u"> Sản phẩm giao dịch của chúng tôi, và giao dịch toàn cầu </div>
+   
     <img class="nhandinhthitruong-1" src="nhandinhthitruong-10.png" />
     <div class="nhandinhthitruongtitle"> Nhận định thị trường hàng ngày </div>
      <!-- TradingView Widget BEGIN -->
@@ -256,7 +225,7 @@
         <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng3"> BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br /> </div>
     </div>
     <div class="tt-khac">
-        <div class="button"> TIN TỨC KHÁC </div>
+        <div class="button1"> TIN TỨC KHÁC </div>
     </div>
     <div class="rectangle-2">
     </div>
@@ -316,9 +285,15 @@
     overflow: visible;
 }
 
-.card {
-    position: absolute;
-    inset: 0;
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .stacked-card {
@@ -330,9 +305,9 @@
     justify-content: flex-start;
     width: 341px;
     height: 439px;
-    position: absolute;
-    left: 114px;
+    position: relative;
     top: 416px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card-state-layer-outlined {
@@ -468,16 +443,6 @@
     font-weight: var(--m3-body-medium-font-weight, 400);
 }
 
-.supporting-text-span2 {
-    color: var(--m3-sys-light-on-surface-variant, #49454f);
-    list-style-type: disc;
-    padding-left: 1em;
-    font-family: var(--m3-body-medium-font-family, 'Roboto', serif);
-    font-size: var(--m3-body-medium-font-size, 14px);
-    line-height: var(--m3-body-medium-line-height, 20px);
-    letter-spacing: var(--m3-body-medium-letter-spacing, 0.25px);
-    font-weight: var(--m3-body-medium-font-weight, 400);
-}
 
 .actions {
     display: flex;
@@ -504,17 +469,7 @@
     overflow: hidden;
 }
 
-.state-layer2 {
-    padding: 10px 24px 10px 24px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-}
+
 
 .label-text {
     color: var(--m3-sys-light-on-primary, #ffffff);
@@ -528,74 +483,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.stacked-card2 {
-    border-radius: 12px;
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 341px;
-    height: 439px;
-    position: absolute;
-    left: 544px;
-    top: 416px;
-}
-
-.supporting-text-span3 {
-    color: var(--m3-sys-light-on-surface-variant, #49454f);
-    font-family: var(--m3-body-medium-font-family, 'Roboto', serif);
-    font-size: var(--m3-body-medium-font-size, 14px);
-    line-height: var(--m3-body-medium-line-height, 20px);
-    letter-spacing: var(--m3-body-medium-letter-spacing, 0.25px);
-    font-weight: var(--m3-body-medium-font-weight, 400);
-}
-
-.supporting-text-span4 {
-    color: var(--m3-sys-light-on-surface-variant, #49454f);
-    list-style-type: disc;
-    padding-left: 1em;
-    font-family: var(--m3-body-medium-font-family, 'Roboto', serif);
-    font-size: var(--m3-body-medium-font-size, 14px);
-    line-height: var(--m3-body-medium-line-height, 20px);
-    letter-spacing: var(--m3-body-medium-letter-spacing, 0.25px);
-    font-weight: var(--m3-body-medium-font-weight, 400);
-}
-
-.stacked-card3 {
-    border-radius: 12px;
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 341px;
-    height: 439px;
-    position: absolute;
-    left: 973px;
-    top: 416px;
-}
-
-.supporting-text-span5 {
-    color: var(--m3-sys-light-on-surface-variant, #49454f);
-    font-family: var(--m3-body-medium-font-family, 'Roboto', serif);
-    font-size: var(--m3-body-medium-font-size, 14px);
-    line-height: var(--m3-body-medium-line-height, 20px);
-    letter-spacing: var(--m3-body-medium-letter-spacing, 0.25px);
-    font-weight: var(--m3-body-medium-font-weight, 400);
-}
-
-.supporting-text-span6 {
-    color: var(--m3-sys-light-on-surface-variant, #49454f);
-    list-style-type: disc;
-    padding-left: 1em;
-    font-family: var(--m3-body-medium-font-family, 'Roboto', serif);
-    font-size: var(--m3-body-medium-font-size, 14px);
-    line-height: var(--m3-body-medium-line-height, 20px);
-    letter-spacing: var(--m3-body-medium-letter-spacing, 0.25px);
-    font-weight: var(--m3-body-medium-font-weight, 400);
 }
 
 .product {
@@ -690,10 +577,6 @@
     width: 505.59px;
 }
 
-.group-1 {
-    position: absolute;
-    inset: 0;
-}
 
 .nhandinhthitruong-1 {
     width: 1203px;
@@ -969,7 +852,7 @@
     overflow: hidden;
 }
 
-.button {
+.button1 {
     color: var(--var-sds-color-text-danger-on-danger, #fee9e7);
     text-align: left;
     font-family: var(--var-sds-typography-body-font-family, "Roboto", serif);
@@ -1062,7 +945,7 @@
 .about-section {
     padding: 80px 0;
     position: relative;
-    top: 1500px;
+    top: 1050px;
 }
 
 .section-container {
@@ -1100,6 +983,7 @@
 }
 
 .cta-button {
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
     padding: 12px 30px;
@@ -1162,7 +1046,7 @@
     border-radius: 6px;
     margin: 0 auto;
     position: relative;
-    top:2750px;
+    top:2320px;
 }
 
 .tradingview-widget-container {
