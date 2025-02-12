@@ -66,6 +66,11 @@
     background-color: #ffffff;
     border-bottom: 1px solid #ddd;
 }
+header.header {
+    position: sticky;
+    top: 0;        
+    z-index: 1000; 
+}
 
 .nav-link {
     text-decoration: none;

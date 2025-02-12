@@ -987,8 +987,8 @@
 .rectangle-2 {
     background: #022357;
     border-radius: 13px 13px 0px 0px;
-    width: 1440px;
-    height: 283px;
+    width: 100%;
+    height: 290px;
     position: absolute;
     left: 0px;
     top: 3629px;
