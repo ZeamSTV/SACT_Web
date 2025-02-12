@@ -1,4 +1,3 @@
-
 <header id="header" class="header has-sticky sticky-jump" style="background-color: #ffffff;">
     <div class="header-wrapper" style="height: auto">
         <link rel="stylesheet" type="text/css" href="css.php">
@@ -73,9 +72,12 @@
     text-transform: uppercase;
     padding: 10px 15px;
     border-radius: 100px;
+   
 }
 
 .nav-link:hover {
+    padding: 10px;
+    margin: 10px;
     color:rgb(0, 0, 0);
     background-color:rgb(255, 255, 255);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
