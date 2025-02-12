@@ -15,7 +15,7 @@ $cards = [
     [
         "title" => "Về chúng tôi",
         "subhead" => "CÔNG TY CỔ PHẦN ĐẦU TƯ HÀNG HÓA VIỆT NAM",
-        "image" => "media0.png",
+        "image" => "https://hanghoavietnam.com.vn/upload/tinnho/80f532428d425b1c0253-16993633044.jpg",
         "description" => [
             "Đăng ký, hướng dẫn, đặt lệnh, nộp/rút tiền và giải đáp tất cả các thắc mắc liên quan",
             "Cung cấp thông tin thị trường, nhận định hàng ngày, khuyến nghị đầu tư",
@@ -25,7 +25,7 @@ $cards = [
     [
         "title" => "Dịch vụ của chúng tôi",
         "subhead" => "GIẢI PHÁP ĐẦU TƯ HIỆU QUẢ",
-        "image" => "media1.png",
+        "image" => "https://hanghoavietnam.com.vn/upload/tinnho/80f532428d425b1c0253-16993633044.jpg",
         "description" => [
             "Tư vấn đầu tư cá nhân và tổ chức",
             "Phân tích thị trường chuyên sâu",
@@ -35,7 +35,7 @@ $cards = [
     [
         "title" => "Liên hệ với chúng tôi",
         "subhead" => "KẾT NỐI NGAY HÔM NAY",
-        "image" => "media2.png",
+        "image" => "https://hanghoavietnam.com.vn/upload/tinnho/80f532428d425b1c0253-16993633044.jpg",
         "description" => [
             "Hotline: 0123-456-789",
             "Email: contact@company.com",
@@ -53,7 +53,7 @@ $cards = [
             </div>
             <div class="content-container">
                 <div class="media-text-content">
-                    <img class="media" src="<?= $card['image']; ?>" alt="<?= $card['title']; ?>" />
+                    <img class="media" src="<?= $card['image']; ?>"style="height: 180px; object-fit: cover;" alt="<?= $card['title']; ?>" />
                     <div class="text-content">
                         <div class="headline">
                             <div class="title"> <?= $card['title']; ?> </div>
@@ -183,7 +183,7 @@ $cards = [
             </div>
             <a href="dang-ky-tai-khoan" class="cta-button">
                 <span>Mở tài khoản ngay</span>
-                <i class="icon-angle-right"></i>
+                <i class="fa fas-chevron-right"></i>
             </a>
         </div>
 
@@ -305,9 +305,9 @@ $cards = [
     align-items: flex-start;
     justify-content: flex-start;
     width: 341px;
-    height: 439px;
+    height: 520px;
     position: relative;
-    top: 416px;
+    top: 350px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
