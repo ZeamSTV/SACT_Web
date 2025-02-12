@@ -65,6 +65,11 @@
     background-color: #ffffff;
     border-bottom: 1px solid #ddd;
 }
+header.header {
+    position: sticky;
+    top: 0;        
+    z-index: 1000; 
+}
 
 .nav-link {
     text-decoration: none;
@@ -76,11 +81,17 @@
 }
 
 .nav-link:hover {
+<<<<<<< HEAD
     padding: 10px;
     margin: 10px;
+=======
+    margin: 10px;
+    padding: 10px;
+>>>>>>> 665891da9b8dfec0998675e77758851388c3cb99
     color:rgb(0, 0, 0);
     background-color:rgb(255, 255, 255);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 .menu-i {

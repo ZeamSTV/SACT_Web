@@ -1719,6 +1719,7 @@ li.has-dropdown:hover>.nav-dropdown-full {
 }
 
 .nav {
+	
 	position: relative;
 	display: inline-block;
 	display: -webkit-box;
