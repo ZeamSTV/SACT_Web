@@ -228,16 +228,17 @@ $cards = [
         <div class="button1"> TIN TỨC KHÁC </div>
     </div>
     <div class="rectangle-2">
-    </div>
-    <div class="rectangle-container">
-        <div class="ch-a-co-ta-i-khoa-n"> Chưa có tài khoản? </div>
-        <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể đạt lợi nhuận mỗi tháng. </div>
-        <div class="button2">
-            <div class="state-layer2">
-                <div class="label-text2"> Đăng ký </div>
+        <div class="rectangle-container">
+            <div class="ch-a-co-ta-i-khoa-n"> Chưa có tài khoản? </div>
+            <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể đạt lợi nhuận mỗi tháng. </div>
+            <div class="button2">
+                <div class="state-layer2">
+                    <div class="label-text2"> Đăng ký </div>
+                </div>
             </div>
         </div>
     </div>
+    
   
 </div>
 <style>
