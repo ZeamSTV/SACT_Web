@@ -2,14 +2,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <div class="trang-ch">
-    <div class="banner" style="background: url(https://png.pngtree.com/thumb_back/fw800/background/20191120/pngtree-financial-fashion-simple-stock-market-webpage-advertising-banner-background-image_322675.jpg) center; background-size: cover; background-repeat: no-repeat;">
-        <svg class="arrow-chevron-left" width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M33.8733 35.818L21.8089 23.9999L33.8733 12.1817L30.625 9L15.3125 23.9999L30.625 39L33.8733 35.818Z" fill="white" />
-        </svg>
-        <svg class="arrow-chevron-right" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14.8181 12.182L26.6362 24.0001L14.8181 35.8183L18 39L33 24.0001L18 9L14.8181 12.182Z" fill="white" />
-        </svg>
+<div class="banner-container">
+    <div class="banner-wrapper">
+        <div class="banner-slide" style="width:1476px; height: 508px; background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20191120/pngtree-financial-fashion-simple-stock-market-webpage-advertising-banner-background-image_322675.jpg');"></div>
+        <div class="banner-slide" style="width:1476px; height: 508px; background-image: url('https://giacatloi.vn/wp-content/uploads/2020/05/chung-khoan-forex-phai-sinh-hang-hoa.jpg');"></div>
+        <div class="banner-slide" style="width:1476px; height: 508px; background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20210906/pngtree-financial-stock-trend-blue-business-image_805475.jpg');"></div>
     </div>
+    
+    <svg class="arrow-chevron-left" onclick="prevSlide()" width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M33.8733 35.818L21.8089 23.9999L33.8733 12.1817L30.625 9L15.3125 23.9999L30.625 39L33.8733 35.818Z" fill="white" />
+    </svg>
+    <svg class="arrow-chevron-right" onclick="nextSlide()" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.8181 12.182L26.6362 24.0001L14.8181 35.8183L18 39L33 24.0001L18 9L14.8181 12.182Z" fill="white" />
+    </svg>
+</div>
     <?php
 $cards = [
     [
@@ -254,36 +260,34 @@ $cards = [
     overflow: hidden;
 }
 
-.banner {
-    padding: 230px 18px 230px 18px;
-    display: flex;
-    max-width: 100%;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 508px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.arrow-chevron-left {
-    flex-shrink: 0;
-    width: 49px;
-    height: 48px;
-    position: relative;
-    overflow: visible;
-}
-
-.arrow-chevron-right {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    position: relative;
-    overflow: visible;
-}
+.banner-container {
+        position: absolute;
+        width: 100%;
+        height: 508px;
+        overflow: hidden;
+    }
+    .banner-wrapper {       
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 1s ease-in-out;
+    }
+    .banner-slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        flex-shrink: 0;
+    }
+    .arrow-chevron-left, .arrow-chevron-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    .arrow-chevron-left { left: 20px; }
+    .arrow-chevron-right { right: 20px; }
 
 .cards-container {
     display: flex;
@@ -1069,3 +1073,24 @@ $cards = [
     }
 }
 </style>
+<script>
+let currentSlide = 0;
+    const slides = document.querySelectorAll('.banner-slide');
+    const wrapper = document.querySelector('.banner-wrapper');
+    
+    function showSlide(index) {
+        wrapper.style.transform = `translateX(-${index * 100}%)`;
+    }
+    
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+    
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+    
+    setInterval(nextSlide, 3000);
+</script>
