@@ -83,10 +83,11 @@ header.header {
 .nav-link:hover {
     padding: 10px;
     margin: 10px;
+    margin: 10px;
+    padding: 10px;
     color:rgb(0, 0, 0);
     background-color:rgb(255, 255, 255);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);    
 }
 
 .menu-i {
