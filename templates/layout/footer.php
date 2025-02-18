@@ -113,7 +113,7 @@
     <footer class="footer" id="footer-wrapper">
         <div class="content">
             <div class="logo-section">
-                <img src="./img/sact_logo.png" alt="SACT Logo">
+                <img width="250px" height="450px" src="https://images.careerviet.vn/employer_folders/lot8/274748/155x155/94258logosact_-09.png" alt="SACT Logo">
                 <div>
                     <h4 style="color: white; text-transform: uppercase;">Về chúng tôi</h4>
                     <p>CÔNG TY CP GIAO DỊCH HÀNG HÓA<br>
@@ -145,9 +145,9 @@
         <div class="connect">
             <h4>Connect</h4>
             <div class="social-icons">
-                <img src="./img/twitter_icon.png" alt="Twitter">
-                <img src="./img/facebook_icon.png" alt="Facebook">
-                <img src="./img/youtube_icon.png" alt="YouTube">
+                <img width="100px" height="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/X_logo.jpg/1200px-X_logo.jpg" alt="Twitter">
+                <img width="100px" height="100px" src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook">
+                <img width="100px" height="100px" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube">
             </div>
         </div>
 

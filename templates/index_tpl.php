@@ -227,17 +227,19 @@ $cards = [
     <div class="tt-khac">
         <div class="button1"> TIN TỨC KHÁC </div>
     </div>
-    <div class="rectangle-2">
-        <div class="rectangle-container">
-            <div class="ch-a-co-ta-i-khoa-n"> Chưa có tài khoản? </div>
-            <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể đạt lợi nhuận mỗi tháng. </div>
-            <div class="button2">
-                <div class="state-layer2">
-                    <div class="label-text2"> Đăng ký </div>
-                </div>
+    
+
+   <div class="rectangle-container">
+        <div class="ch-a-co-ta-i-khoa-n"> Chưa có tài khoản? </div>
+        <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể đạt lợi nhuận mỗi tháng. </div>
+        <div class="button2">
+            <div class="state-layer2">
+                <div class="label-text2"> Đăng ký </div>
             </div>
         </div>
     </div>
+    
+
     
   
 </div>
@@ -868,65 +870,58 @@ $cards = [
     inset: 0;
 }
 
-.rectangle-2 {
+.rectangle-container {
     background: #022357;
     border-radius: 13px 13px 0px 0px;
     width: 100%;
-    height: 290px;
-    position: absolute;
-    left: 0px;
-    top: 3629px;
+    height: 290px;   
     display: flex;
-    max-width: 100%;
+    position: absolute;
+    top: 3630px;
+    flex-direction: column;
+    padding: 40px 20px; 
+    color: #ffffff; 
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .ch-a-co-ta-i-khoa-n {
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     font-family: "Roboto", serif;
     font-size: 48px;
     line-height: 67px;
     font-weight: 700;
-    position: absolute;
-    left: 516px;
-    top: 3668px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    margin-bottom: 20px;
 }
 
 .ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng {
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     font-family: "Roboto", serif;
     font-size: 20px;
     line-height: 67px;
     font-weight: 400;
-    position: absolute;
-    left: 442px;
-    top: 3734.55px;
     width: 545px;
     height: 77.71px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    /* display: flex; */
+    
+    
 }
 
 .button2 {
     background: var(--schemes-primary, #65558f);
     border-radius: 100px;
     display: flex;
-    flex-direction: column;
     gap: 8px;
     align-items: center;
     justify-content: center;
     width: 168px;
     height: 59px;
-    position: absolute;
-    left: 630px;
-    top: 3812px;
     overflow: hidden;
 }
 
@@ -946,7 +941,7 @@ $cards = [
 .about-section {
     padding: 80px 0;
     position: relative;
-    top: 1050px;
+    top: 1000px;
 }
 
 .section-container {
