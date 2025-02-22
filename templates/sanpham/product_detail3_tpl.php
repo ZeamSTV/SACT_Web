@@ -1,65 +1,59 @@
-
-
-
-
-
-
-
-
 <div id="product-detail">
 
 
 
-  <div class="title_ttt">
+    <div class="title_ttt">
 
-      <h1><?=$title_ttt?></h1>
+        <h1><?=$title_ttt?></h1>
 
-  </div>
+    </div>
 
 
 
-  <div class="kqchitiet">
+    <div class="kqchitiet">
 
-      <p><b>Khu vực: </b><a ><?=$product_detail['diachi']?></a><?=($product_detail['id_phuong']>0)?', '.get_phuong($product_detail['id_phuong']):''?><?=($product_detail['id_quan']>0)?', '.get_quan($product_detail['id_quan']):''?><?=($product_detail['id_tinh']>0)?', '.get_tinh($product_detail['id_tinh']):''?></p>
+        <p><b>Khu vực:
+            </b><a><?=$product_detail['diachi']?></a><?=($product_detail['id_phuong']>0)?', '.get_phuong($product_detail['id_phuong']):''?><?=($product_detail['id_quan']>0)?', '.get_quan($product_detail['id_quan']):''?><?=($product_detail['id_tinh']>0)?', '.get_tinh($product_detail['id_tinh']):''?>
+        </p>
 
-      <span><b>Giá: </b> <strong><?=jam_read_num_forvietnamese($product_detail['gia'])?></strong></span>
+        <span><b>Giá: </b> <strong><?=jam_read_num_forvietnamese($product_detail['gia'])?></strong></span>
 
         <span><b>Diện tích: </b> <strong><?=$product_detail['dientich']?> m2</strong></span>
 
-  </div>
+    </div>
 
 
-  <div class="pm-mota">
+    <div class="pm-mota">
 
-    Thông tin mô tả
+        Thông tin mô tả
 
-  </div>
+    </div>
 
-  <div class="pm-desc">
+    <div class="pm-desc">
 
-      <?=$product_detail['noidung_vi']?>
+        <?=$product_detail['noidung_vi']?>
 
-  </div>
-
-
-
-  <div class="slider-detail">
+    </div>
 
 
 
-      <ul class="tabs-slider">
-
-        <li class="tab-link active" data-tab="tab-1"><a> Xem Ảnh</a></li>
-
-        <li class="tab-link " data-tab="tab-2"><a>Xem bản đồ</a></li>
+    <div class="slider-detail">
 
 
 
-       </ul>
+        <ul class="tabs-slider">
+
+            <li class="tab-link active" data-tab="tab-1"><a> Xem Ảnh</a></li>
+
+            <li class="tab-link " data-tab="tab-2"><a>Xem bản đồ</a></li>
 
 
 
-      <div id="tab-1" class="tab-content-slider-detail active">
+        </ul>
+
+
+
+        <div id="tab-1" class="tab-content-slider-detail active">
 
 
 
@@ -67,33 +61,33 @@
 
 
 
-              <div id="sync1" class="owl-carousel owl-theme">
+            <div id="sync1" class="owl-carousel owl-theme">
 
-                  <div class="item">
-
-                  
-
-                      <div class="hinhchitiet">
+                <div class="item">
 
 
 
-                            <img src="thumb/600x500/2/<?=_upload_sanpham_l.$product_detail['photo']?>">
+                    <div class="hinhchitiet">
 
 
 
-                      </div>
-
-                       
-
-                      
+                        <img src="thumb/600x500/2/<?=_upload_sanpham_l.$product_detail['photo']?>">
 
 
 
-                  </div>
+                    </div>
 
 
 
-                  <?php 
+
+
+
+
+                </div>
+
+
+
+                <?php 
 
 
 
@@ -103,47 +97,47 @@
 
                   foreach ($photo_sp as $key => $v) {?>
 
-                     <div class="item">
+                <div class="item">
 
-                        <div class="hinhchitiet">
-
-
-
-                              <img src="thumb/600x500/2/<?=_upload_sanpham_l.$v['photo']?>">
+                    <div class="hinhchitiet">
 
 
 
-                        </div>
+                        <img src="thumb/600x500/2/<?=_upload_sanpham_l.$v['photo']?>">
+
+
 
                     </div>
 
-                  <?php }} ?>
+                </div>
+
+                <?php }} ?>
+
+            </div>
+
+
+
+            <div id="sync2" class="owl-carousel owl-theme">
+
+                <div class="item">
+
+
+
+                    <div class="hinhcon">
+
+
+
+                        <img src="thumb/120x75/1/<?=_upload_sanpham_l.$product_detail['photo']?>">
+
+
+
+                    </div>
+
+
 
                 </div>
 
-
-
-                <div id="sync2" class="owl-carousel owl-theme">
-
-                  <div class="item">
-
-                    
-
-                        <div class="hinhcon">
-
-
-
-                                      <img src="thumb/120x75/1/<?=_upload_sanpham_l.$product_detail['photo']?>">
-
-
-
-                        </div>
-
-
-
-                  </div>
-
-                   <?php 
+                <?php 
 
 
 
@@ -153,63 +147,63 @@
 
                   foreach ($photo_sp as $key => $v) {?>
 
-                     <div class="item">
+                <div class="item">
 
-                        <div class="hinhcon">
-
-
-
-                              <img src="thumb/120x75/1/<?=_upload_sanpham_l.$v['photo']?>">
+                    <div class="hinhcon">
 
 
 
-                        </div>
+                        <img src="thumb/120x75/1/<?=_upload_sanpham_l.$v['photo']?>">
+
+
 
                     </div>
 
-                  <?php }} ?>
-
-                  
-
                 </div>
+
+                <?php }} ?>
+
+
+
+            </div>
 
             <!-- end hinh anh-->
 
 
 
-      </div>
+        </div>
 
-      <div id="tab-2" class="tab-content-slider-detail">
-
-
-
-          <!-- ban do-->
+        <div id="tab-2" class="tab-content-slider-detail">
 
 
 
-              <div class="bandodetail">
+            <!-- ban do-->
 
 
 
-                  <?=$product_detail['bando']?> 
+            <div class="bandodetail">
 
 
 
-              </div>
+                <?=$product_detail['bando']?>
 
 
 
-          <!-- end bando-->
+            </div>
 
 
 
-      </div>
-
-  </div>
+            <!-- end bando-->
 
 
 
-  <!-- bang thong tin-->
+        </div>
+
+    </div>
+
+
+
+    <!-- bang thong tin-->
 
 
 
@@ -221,177 +215,177 @@
 
 
 
-              <div class="div-table-cell table1">
+            <div class="div-table-cell table1">
 
 
 
-                  <div class="div-hold">
+                <div class="div-hold">
 
-                      <div class="header">Đặc điểm bất động sản</div>
+                    <div class="header">Đặc điểm bất động sản</div>
 
-                      <div class="table-detail">
+                    <div class="table-detail">
 
 
 
-                            <div class="row">
+                        <div class="row">
 
-                               <div class="left">
+                            <div class="left">
 
-                                  Loại tin rao
-
-                               </div>
-
-                               <div class="right">
-
-                                 <?=get_name_cap2($product_detail['id_cat1'])?>
-
-                               </div>
-
-                               <div style="clear: both"></div>
+                                Loại tin rao
 
                             </div>
 
-                            <div class="row">
+                            <div class="right">
 
-                               <div class="left">
+                                <?=get_name_cap2($product_detail['id_cat1'])?>
 
-                                  Địa chỉ
+                            </div>
 
-                               </div>
+                            <div style="clear: both"></div>
 
-                               <div class="right">
+                        </div>
 
-                                     <?=$product_detail['diachi']?>
+                        <div class="row">
 
-                               </div>
+                            <div class="left">
 
-                             </div>
+                                Địa chỉ
 
+                            </div>
 
+                            <div class="right">
 
-                             <?php if($product_detail['id_cat']==361||$product_detail['id_cat']==366) {?>
+                                <?=$product_detail['diachi']?>
 
+                            </div>
 
-
-                                 <div class="row">
-
-                               <div class="left">
-
-                                 Ngày đăng
-
-                               </div>
-
-                               <div class="right">
-
-                                     <?=date('d/m/Y',$product_detail['ngaytao'])?>
-
-                               </div>
-
-                             </div>
+                        </div>
 
 
 
+                        <?php if($product_detail['id_cat']==361||$product_detail['id_cat']==366) {?>
 
 
-                            <?php } ?>
 
-                             <?php if($product_detail['id_cat']==358||$product_detail['id_cat']==360) {?>
+                        <div class="row">
 
-                             <!-- <div class="row">
+                            <div class="left">
+
+                                Ngày đăng
+
+                            </div>
+
+                            <div class="right">
+
+                                <?=date('d/m/Y',$product_detail['ngaytao'])?>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <?php } ?>
+
+                        <?php if($product_detail['id_cat']==358||$product_detail['id_cat']==360) {?>
+
+                        <!-- <div class="row">
 
                                
 
                              </div> -->
 
-                             <div class="row">
+                        <div class="row">
 
-                                  <div class="tt1">
-
-
-
-                                      <div class="left">
-
-                                       Số phòng ngủ
-
-                                       </div>
-
-                                       <div class="right" >
-
-                                             <?=$product_detail['sophongngu']?>
-
-                                       </div>
+                            <div class="tt1">
 
 
 
-                                  </div>
+                                <div class="left">
 
-                                  <div class="tt1">
-
-                                     <div class="left">
-
-                                       Số toilet
-
-                                     </div>
-
-                                     <div class="right">
-
-                                           <?=$product_detail['sotoilet']?>
-
-                                     </div>
-
-
-
-                                 </div>
-
-
-
-                             </div>
-
-                      
-
-                        
-
-                            <div class="row">
-
-
-
-                                <div class="tt1" >
-
-                                     <div class="left">
-
-                                        Số tầng
-
-                                     </div>
-
-                                     <div class="right" >
-
-                                           <?=$product_detail['sotang']?>
-
-                                     </div>
-
-                                 </div>
-
-
-
-
-
-                                <div class="tt1">
-
-                                   <div class="left">
-
-                                      Hướng nhà
-
-                                   </div>
-
-                                   <div class="right">
-
-                                         <?=$product_detail['huongnha']?>
-
-                                   </div>
+                                    Số phòng ngủ
 
                                 </div>
 
-                             </div>
+                                <div class="right">
+
+                                    <?=$product_detail['sophongngu']?>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="tt1">
+
+                                <div class="left">
+
+                                    Số toilet
+
+                                </div>
+
+                                <div class="right">
+
+                                    <?=$product_detail['sotoilet']?>
+
+                                </div>
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+                        <div class="row">
+
+
+
+                            <div class="tt1">
+
+                                <div class="left">
+
+                                    Số tầng
+
+                                </div>
+
+                                <div class="right">
+
+                                    <?=$product_detail['sotang']?>
+
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <div class="tt1">
+
+                                <div class="left">
+
+                                    Hướng nhà
+
+                                </div>
+
+                                <div class="right">
+
+                                    <?=$product_detail['huongnha']?>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
 
 
@@ -399,55 +393,55 @@
 
 
 
-                             <div class="row">
+                        <div class="row">
 
-                               <div class="left">
+                            <div class="left">
 
-                                 Hiện trạng
+                                Hiện trạng
 
-                               </div>
+                            </div>
 
-                               <div class="right">
+                            <div class="right">
 
-                                     <?=$product_detail['huongbancong']?>
+                                <?=$product_detail['huongbancong']?>
 
-                               </div>
+                            </div>
 
-                             </div>
+                        </div>
 
-                             <div class="row">
+                        <div class="row">
 
-                               <div class="left">
+                            <div class="left">
 
-                                 Vị trí
+                                Vị trí
 
-                               </div>
+                            </div>
 
-                               <div class="right">
+                            <div class="right">
 
-                                     <?=$product_detail['vitri']?>
+                                <?=$product_detail['vitri']?>
 
-                               </div>
+                            </div>
 
-                             </div>
+                        </div>
 
-                                <div class="row">
+                        <div class="row">
 
-                               <div class="left">
+                            <div class="left">
 
-                                  Nội thất
+                                Nội thất
 
-                               </div>
+                            </div>
 
-                               <div class="right">
+                            <div class="right">
 
-                                     <?=$product_detail['noithat']?>
+                                <?=$product_detail['noithat']?>
 
-                               </div>
+                            </div>
 
-                             </div>
+                        </div>
 
-                          <!--     <div class="row">
+                        <!--     <div class="row">
 
                                <div class="left">
 
@@ -467,7 +461,7 @@
 
 
 
-                            <?php } ?>
+                        <?php } ?>
 
 
 
@@ -479,77 +473,79 @@
 
 
 
-                      </div>
+                    </div>
 
 
 
                     <?php if($product_detail['id_duan']>0&&($product_detail['id_cat']==358||$product_detail['id_cat']==360)){?>
 
-                      <div id="project">
+                    <div id="project">
 
-                           <div class="header" style="margin-top: 15px; line-height: 29px;">
+                        <div class="header" style="margin-top: 15px; line-height: 29px;">
 
-                              Thông tin dự án
+                            Thông tin dự án
 
-                              <div class="inproject">
+                            <div class="inproject">
 
-                                 <a  href="<?=get_linkduan($product_detail['id_duan'])?>-<?=$product_detail['id_duan']?>.htm">Chi tiết dự án</a>
+                                <a
+                                    href="<?=get_linkduan($product_detail['id_duan'])?>-<?=$product_detail['id_duan']?>.htm">Chi
+                                    tiết dự án</a>
 
-                              </div>
+                            </div>
 
-                              <div class="clear"></div>
-
-                           </div>
-
-                           <div class="table-detail">
-
-                              <div class="row">
-
-                                 <div class="left">Tên dự án</div>
-
-                                 <div class="right">
-
-                                    <?=get_tenduan($product_detail['id_duan'])?>
-
-                                 </div>
-
-                                 <div style="clear: both"></div>
-
-                              </div>
-
-                              <div  class="row">
-
-                                 <div class="left">Chủ đầu tư</div>
-
-                                 <div class="right">
-
-                                     <?=get_tenchudautu($product_detail['id_duan'])?>
-
-                                 </div>
-
-                                 <div style="clear: both"></div>
-
-                              </div>
-
-                              <div class="row">
-
-                                 <div class="left">Quy mô</div>
-
-                                 <div class="right">
-
-                                     <?=get_quymo($product_detail['id_duan'])?>
-
-                                 </div>
-
-                                 <div style="clear: both"></div>
-
-                              </div>
-
-                           </div>
+                            <div class="clear"></div>
 
                         </div>
 
-                 <?php    } ?>
+                        <div class="table-detail">
+
+                            <div class="row">
+
+                                <div class="left">Tên dự án</div>
+
+                                <div class="right">
+
+                                    <?=get_tenduan($product_detail['id_duan'])?>
+
+                                </div>
+
+                                <div style="clear: both"></div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="left">Chủ đầu tư</div>
+
+                                <div class="right">
+
+                                    <?=get_tenchudautu($product_detail['id_duan'])?>
+
+                                </div>
+
+                                <div style="clear: both"></div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="left">Quy mô</div>
+
+                                <div class="right">
+
+                                    <?=get_quymo($product_detail['id_duan'])?>
+
+                                </div>
+
+                                <div style="clear: both"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <?php    } ?>
 
 
 
@@ -557,108 +553,108 @@
 
 
 
-                  </div>
+                </div>
 
-              </div>
+            </div>
 
-              <div class="div-table-cell" style="width: 15px;"></div>
+            <div class="div-table-cell" style="width: 15px;"></div>
 
-              <div class="div-table-cell table2">
-
-
-
-                  <div class="header">Liên hệ</div>
-
-                  <div class="table-detail">
+            <div class="div-table-cell table2">
 
 
 
-                          <div id="divCustomerInfo">
+                <div class="header">Liên hệ</div>
+
+                <div class="table-detail">
 
 
 
-                                <div id="LeftMainContent__productDetail_contactName" class="right-content">
-
-                                      <div class="normalblue left">
-
-                                         Tên liên lạc
-
-                                      </div>
-
-                                        <div class="right" style="text-transform:capitalize;">
-
-                                         <?=$product_detail['tenlienhe']?>
-
-                                        </div>
-
-                              
-
-                                 </div>
-
-                                 <div id="LeftMainContent__productDetail_contactMobile" class="right-content">
-
-                                    <div class="normalblue left">
-
-                                        Mobile
-
-                                    </div>
-
-                                    <div class="right">
-
-                                        <?=$product_detail['dienthoailienhe']?>
-
-                                    </div>
-
-                                 
-
-                                  </div>
-
-                                
-
-                                  <div class="right-content">
-
-                                        <div class="normalblue left">
-
-                                            Email
-
-                                        </div>
-
-                                         <div class="right">
-
-                                            <?=$product_detail['emaillienhe']?>
-
-                                         </div>
-
-                              
-
-                                  </div>  
-                                  <div class="right-content">
-
-                                        <div class="normalblue left">
-
-                                            Địa chỉ:
-
-                                        </div>
-
-                                         <div class="right">
-
-                                            <?=$product_detail['diachilienhe']?>
-
-                                         </div>
-
-                              
-
-                                  </div>  
+                    <div id="divCustomerInfo">
 
 
 
-                          </div>
+                        <div id="LeftMainContent__productDetail_contactName" class="right-content">
+
+                            <div class="normalblue left">
+
+                                Tên liên lạc
+
+                            </div>
+
+                            <div class="right" style="text-transform:capitalize;">
+
+                                <?=$product_detail['tenlienhe']?>
+
+                            </div>
 
 
 
-                  </div>
+                        </div>
 
-              </div>
+                        <div id="LeftMainContent__productDetail_contactMobile" class="right-content">
+
+                            <div class="normalblue left">
+
+                                Mobile
+
+                            </div>
+
+                            <div class="right">
+
+                                <?=$product_detail['dienthoailienhe']?>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                        <div class="right-content">
+
+                            <div class="normalblue left">
+
+                                Email
+
+                            </div>
+
+                            <div class="right">
+
+                                <?=$product_detail['emaillienhe']?>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="right-content">
+
+                            <div class="normalblue left">
+
+                                Địa chỉ:
+
+                            </div>
+
+                            <div class="right">
+
+                                <?=$product_detail['diachilienhe']?>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -668,34 +664,34 @@
 
 
 
-  <!-- end bảng thông tin-->
+    <!-- end bảng thông tin-->
 
 
-  <div class="prd-more-info">
+    <div class="prd-more-info">
 
         <div class="p111">
-              <span>Mã tin đăng:</span>
-              <div><?=$product_detail['matin']?></div>
+            <span>Mã tin đăng:</span>
+            <div><?=$product_detail['matin']?></div>
         </div>
         <div class="p111">
-              <span>Loại tin đăng:</span>
-              <div><?=loaitin($product_detail['loaitin'])?></div>
+            <span>Loại tin đăng:</span>
+            <div><?=loaitin($product_detail['loaitin'])?></div>
         </div>
-      
+
         <div class="p111">
-              <span>Ngày đăng tin:</span>
-              <div><?=date('d/m/Y',$product_detail['ngaytao'])?></div>
+            <span>Ngày đăng tin:</span>
+            <div><?=date('d/m/Y',$product_detail['ngaytao'])?></div>
         </div>
         <div class="p111">
-              <span>Ngày hết hạn:</span>
-               <div><?=date('d/m/Y',$product_detail['ngaytao']+30*24*60*60)?></div>
+            <span>Ngày hết hạn:</span>
+            <div><?=date('d/m/Y',$product_detail['ngaytao']+30*24*60*60)?></div>
         </div>
 
 
-  </div>
+    </div>
 
 
-  <!-- tin cùng khu vực -->
+    <!-- tin cùng khu vực -->
 
 
 
@@ -709,41 +705,44 @@
 
     <div class="khungcat">
 
-    <?php foreach ($product_khac as $key => $v) {?>
+        <?php foreach ($product_khac as $key => $v) {?>
 
-            <div class="item_sanpham">
-
-
-
-                <div class="hinhsp">
-
-                  <a href="<?=$v['tenkhongdau_vi']?>-<?=$v['id']?>.htm"><img src="thumb/188x140/1/<?=_upload_sanpham_l.$v['photo']?>"></a>
-
-                </div>
-
-                <div class="motasp">
-
-                  <div class="title-sp">
-
-                    
-
-                      <h3>
-
-
-                       <a class="a1" href="<?=$v['tenkhongdau_vi']?>-<?=$v['id']?>.htm"><?=catchuoi($v['ten_vi'],75)?></a>
-                        <a class="a2" href="<?=$v['tenkhongdau_vi']?>-<?=$v['id']?>.htm"><?=catchuoi($v['ten_vi'],30)?></a>
+        <div class="item_sanpham">
 
 
 
-                      </h3>
+            <div class="hinhsp">
 
-                            <?php if($v['id_cat']==358||$v['id_cat']==360){?>
+                <a href="<?=$v['tenkhongdau_vi']?>-<?=$v['id']?>.htm"><img
+                        src="thumb/188x140/1/<?=_upload_sanpham_l.$v['photo']?>"></a>
 
-                      <div class="gialeft">Giá: <span><?=jam_read_num_forvietnamese($v['gia'])?></span></div>
+            </div>
+
+            <div class="motasp">
+
+                <div class="title-sp">
+
+
+
+                    <h3>
+
+
+                        <a class="a1"
+                            href="<?=$v['tenkhongdau_vi']?>-<?=$v['id']?>.htm"><?=catchuoi($v['ten_vi'],75)?></a>
+                        <a class="a2"
+                            href="<?=$v['tenkhongdau_vi']?>-<?=$v['id']?>.htm"><?=catchuoi($v['ten_vi'],30)?></a>
+
+
+
+                    </h3>
+
+                    <?php if($v['id_cat']==358||$v['id_cat']==360){?>
+
+                    <div class="gialeft">Giá: <span><?=jam_read_num_forvietnamese($v['gia'])?></span></div>
 
                     <?php }else{?>
 
-                      <div class="gialeft">Giá: <span><?=$v['gia']?></span></div>
+                    <div class="gialeft">Giá: <span><?=$v['gia']?></span></div>
 
 
 
@@ -753,21 +752,22 @@
 
 
 
-                  </div>
+                </div>
 
-                  <div class="diachi-ngaydang">
+                <div class="diachi-ngaydang">
 
-                      <span class="diachi"><?=$v['diachi']?><?=($v['id_quan']>0)?', '.get_quan($v['id_quan']):''?><?=($v['id_tinh']>0)?', '.get_tinh($v['id_tinh']):''?></span>
+                    <span
+                        class="diachi"><?=$v['diachi']?><?=($v['id_quan']>0)?', '.get_quan($v['id_quan']):''?><?=($v['id_tinh']>0)?', '.get_tinh($v['id_tinh']):''?></span>
 
-                      <span class="ngaydang"><?=date('d/m/Y',$v['ngaytao'])?></span>
+                    <span class="ngaydang"><?=date('d/m/Y',$v['ngaytao'])?></span>
 
-                  </div>
+                </div>
 
-                  <p><?=catchuoi($v['mota_vi'],150)?></p>
+                <p><?=catchuoi($v['mota_vi'],150)?></p>
 
-                  <ul>
+                <ul>
 
-                  
+
 
                     <li><i class="fa fa-circle"></i><span>Diện tích:</span> <?=$v['dientich']?></li>
 
@@ -781,24 +781,24 @@
 
                     <li><i class="fa fa-circle"></i><span>Vị trí:</span> <?=$v['vitri']?></li>
 
-                  <?php } ?>
+                    <?php } ?>
 
 
 
-                  </ul>
+                </ul>
 
-                  <a href="<?=$v['tenkhongdau_vi']?>-<?=$v['id']?>.htm" class="xemthemsp">Xem thêm</a>
-
-                </div>
-
-
+                <a href="<?=$v['tenkhongdau_vi']?>-<?=$v['id']?>.htm" class="xemthemsp">Xem thêm</a>
 
             </div>
 
-    <?php } ?>
 
 
-      <?php
+        </div>
+
+        <?php } ?>
+
+
+        <?php
 
                      if($count_sp>$maxR)
 
@@ -806,17 +806,17 @@
 
                       ?>
 
-              <div class="w-100" align="center">
+        <div class="w-100" align="center">
 
-                    <div class="pagination">
+            <div class="pagination">
 
-                      <?=$paging['paging']?>
-
-                    </div>
+                <?=$paging['paging']?>
 
             </div>
 
-                  <?php
+        </div>
+
+        <?php
 
                       }   
 
@@ -826,11 +826,11 @@
 
 
 
-</div>
+    </div>
 
 
 
-  <!--- end tin cùng khu vực -->
+    <!--- end tin cùng khu vực -->
 
 
 
@@ -847,28 +847,27 @@
 
 
 <style type="text/css">
+#sync1 {
 
-  #sync1 {
+    .item {
 
-  .item {
+        background: #0c83e7;
 
-    background: #0c83e7;
+        padding: 80px 0px;
 
-    padding: 80px 0px;
+        margin: 5px;
 
-    margin: 5px;
+        color: #FFF;
 
-    color: #FFF;
+        -webkit-border-radius: 3px;
 
-    -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
 
-    -moz-border-radius: 3px;
+        border-radius: 3px;
 
-    border-radius: 3px;
+        text-align: center;
 
-    text-align: center;
-
-  }
+    }
 
 }
 
@@ -876,39 +875,39 @@
 
 #sync2 {
 
-  .item {
+    .item {
 
-    background: #C9C9C9;
+        background: #C9C9C9;
 
-    padding: 10px 0px;
+        padding: 10px 0px;
 
-    margin: 5px;
+        margin: 5px;
 
-    color: #FFF;
+        color: #FFF;
 
-    -webkit-border-radius: 3px;
+        -webkit-border-radius: 3px;
 
-    -moz-border-radius: 3px;
+        -moz-border-radius: 3px;
 
-    border-radius: 3px;
+        border-radius: 3px;
 
-    text-align: center;
+        text-align: center;
 
-    cursor: pointer;
+        cursor: pointer;
 
-    h1 {
+        h1 {
 
-      font-size: 18px;
+            font-size: 18px;
+
+        }
 
     }
 
-  }
+    .current .item {
 
-  .current .item{
+        background: #0c83e7;
 
-    background: #0c83e7;
-
-  }
+    }
 
 }
 
@@ -920,25 +919,25 @@
 
 .owl-theme {
 
-  .owl-nav {
+    .owl-nav {
 
-    /*default owl-theme theme reset .disabled:hover links */
+        /*default owl-theme theme reset .disabled:hover links */
 
-    [class*='owl-'] {
+        [class*='owl-'] {
 
-      transition: all .3s ease;
+            transition: all .3s ease;
 
-      &.disabled:hover {
+            &.disabled:hover {
 
-       background-color: #D6D6D6;
+                background-color: #D6D6D6;
 
-      }   
+            }
+
+        }
+
+
 
     }
-
-    
-
-  }
 
 }
 
@@ -948,43 +947,43 @@
 
 #sync1.owl-theme {
 
-  position: relative;
+    position: relative;
 
-  .owl-next, .owl-prev {
+    .owl-next,
+    .owl-prev {
 
-    width: 22px;
+        width: 22px;
 
-    height: 40px;
+        height: 40px;
 
-    margin-top: -20px;
+        margin-top: -20px;
 
-    position: absolute;
+        position: absolute;
 
-    top: 50%;
+        top: 50%;
 
-  }
+    }
 
-  .owl-prev {
+    .owl-prev {
 
-    left: 10px;
+        left: 10px;
 
 
 
-  }
+    }
 
-  .owl-next {
+    .owl-next {
 
-    right: 10px;    
+        right: 10px;
 
-  }
+    }
 
 }
 
-#sync1 .owl-next,#sync1 .owl-prev
+#sync1 .owl-next,
+#sync1 .owl-prev {
 
-{
-
-  width: 30px;
+    width: 30px;
 
     position: absolute;
 
@@ -992,200 +991,195 @@
 
     margin: 0;
 
-    border-radius: 0;padding: 10px 7px 5px 7px;
+    border-radius: 0;
+    padding: 10px 7px 5px 7px;
 
 }
 
-#sync1 .owl-next
+#sync1 .owl-next {
 
-{
-
-  right: 0;
+    right: 0;
 
 }
 
-#sync1 .owl-prev
+#sync1 .owl-prev {
 
-{
-
-  left: 0;
+    left: 0;
 
 }
 
-#sync2 .owl-item.active.current .hinhcon
+#sync2 .owl-item.active.current .hinhcon {
 
-{
-
- border: 2px solid #055699;
+    border: 2px solid #055699;
 
 }
-
 </style>
 
 
 
 <script type="text/javascript">
-
-  $(document).ready(function() {
-
-
-
-  var sync1 = $("#sync1");
-
-  var sync2 = $("#sync2");
-
-  var slidesPerPage = 6; //globaly define number of elements per page
-
-  var syncedSecondary = true;
+$(document).ready(function() {
 
 
 
-  sync1.owlCarousel({
+    var sync1 = $("#sync1");
 
-    items : 1,
+    var sync2 = $("#sync2");
 
-    slideSpeed : 2000,
+    var slidesPerPage = 6; //globaly define number of elements per page
 
-    nav: true,
-
-    autoplay: true,
-
-    dots: false,
-
-    loop: true,
-
-    responsiveRefreshRate : 200,
-
-    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
-
-  }).on('changed.owl.carousel', syncPosition);
+    var syncedSecondary = true;
 
 
 
-  sync2
+    sync1.owlCarousel({
 
-    .on('initialized.owl.carousel', function () {
+        items: 1,
 
-      sync2.find(".owl-item").eq(0).addClass("current");
+        slideSpeed: 2000,
 
-    })
+        nav: true,
 
-    .owlCarousel({
+        autoplay: true,
 
-    items : slidesPerPage,
+        dots: false,
 
-    dots: true,
+        loop: true,
 
-    nav: false,
+        responsiveRefreshRate: 200,
 
-    smartSpeed: 200,
+        navText: [
+            '<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>',
+            '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'
+        ],
 
-    slideSpeed : 500,
-
-    margin:10,
-
-
-
-    slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
-
-    responsiveRefreshRate : 100
-
-  }).on('changed.owl.carousel', syncPosition2);
-
-
-
-  function syncPosition(el) {
-
-    //if you set loop to false, you have to restore this next line
-
-    //var current = el.item.index;
-
-    
-
-    //if you disable loop you have to comment this block
-
-    var count = el.item.count-1;
-
-    var current = Math.round(el.item.index - (el.item.count/2) - .5);
-
-    
-
-    if(current < 0) {
-
-      current = count;
-
-    }
-
-    if(current > count) {
-
-      current = 0;
-
-    }
-
-    
-
-    //end block
+    }).on('changed.owl.carousel', syncPosition);
 
 
 
     sync2
 
-      .find(".owl-item")
+        .on('initialized.owl.carousel', function() {
 
-      .removeClass("current")
+            sync2.find(".owl-item").eq(0).addClass("current");
 
-      .eq(current)
+        })
 
-      .addClass("current");
+        .owlCarousel({
 
-    var onscreen = sync2.find('.owl-item.active').length - 1;
+            items: slidesPerPage,
 
-    var start = sync2.find('.owl-item.active').first().index();
+            dots: true,
 
-    var end = sync2.find('.owl-item.active').last().index();
+            nav: false,
 
-    
+            smartSpeed: 200,
 
-    if (current > end) {
+            slideSpeed: 500,
 
-      sync2.data('owl.carousel').to(current, 100, true);
+            margin: 10,
+
+
+
+            slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+
+            responsiveRefreshRate: 100
+
+        }).on('changed.owl.carousel', syncPosition2);
+
+
+
+    function syncPosition(el) {
+
+        //if you set loop to false, you have to restore this next line
+
+        //var current = el.item.index;
+
+
+
+        //if you disable loop you have to comment this block
+
+        var count = el.item.count - 1;
+
+        var current = Math.round(el.item.index - (el.item.count / 2) - .5);
+
+
+
+        if (current < 0) {
+
+            current = count;
+
+        }
+
+        if (current > count) {
+
+            current = 0;
+
+        }
+
+
+
+        //end block
+
+
+
+        sync2
+
+            .find(".owl-item")
+
+            .removeClass("current")
+
+            .eq(current)
+
+            .addClass("current");
+
+        var onscreen = sync2.find('.owl-item.active').length - 1;
+
+        var start = sync2.find('.owl-item.active').first().index();
+
+        var end = sync2.find('.owl-item.active').last().index();
+
+
+
+        if (current > end) {
+
+            sync2.data('owl.carousel').to(current, 100, true);
+
+        }
+
+        if (current < start) {
+
+            sync2.data('owl.carousel').to(current - onscreen, 100, true);
+
+        }
 
     }
 
-    if (current < start) {
 
-      sync2.data('owl.carousel').to(current - onscreen, 100, true);
 
-    }
+    function syncPosition2(el) {
 
-  }
+        if (syncedSecondary) {
 
-  
+            var number = el.item.index;
 
-  function syncPosition2(el) {
+            sync1.data('owl.carousel').to(number, 100, true);
 
-    if(syncedSecondary) {
-
-      var number = el.item.index;
-
-      sync1.data('owl.carousel').to(number, 100, true);
+        }
 
     }
 
-  }
 
-  
 
-  sync2.on("click", ".owl-item", function(e){
+    sync2.on("click", ".owl-item", function(e) {
 
-    e.preventDefault();
+        e.preventDefault();
 
-    var number = $(this).index();
+        var number = $(this).index();
 
-    sync1.data('owl.carousel').to(number, 300, true);
+        sync1.data('owl.carousel').to(number, 300, true);
 
-  });
+    });
 
 });
-
 </script>

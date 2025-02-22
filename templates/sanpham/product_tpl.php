@@ -125,13 +125,14 @@
                 <div class="col-inner">
                     <div class="row row-small">
                         <?php if($product && count($product) > 0) {
-                     foreach ($product as $key => $v) {?>
+                            foreach ($product as $key => $v) { ?>
                         <div class="col medium-4 small-12 large-4">
                             <div class="col-inner">
-                                <div class="product-box">
-                                    <div class="product-image"
-                                        style="background-image: url('<?=_upload_sanpham_l.$v['photo']?>');"></div>
-                                    <div class="product-info text-center">
+                                <div class="card">
+                                    <div class="card-image"
+                                        style="background-image: url('<?=_upload_sanpham_l.$v['photo']?>');">
+                                    </div>
+                                    <div class="card-content text-center">
                                         <h3><a href="<?=$v['tenkhongdau_vi']?>"><?=$v['ten_vi']?></a></h3>
                                     </div>
                                 </div>
@@ -146,6 +147,40 @@
     </div>
 </section>
 <?php } ?>
+<style>
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: #333;
+}
+</style>
 <script>
 // Slideshow Logic
 let currentSlide = 0;

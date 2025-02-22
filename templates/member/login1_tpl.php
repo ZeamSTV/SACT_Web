@@ -1,104 +1,80 @@
-         <script type="text/javascript">
-    
-$( document ).ready(function() {
-    
+<!DOCTYPE html>
+<html lang="vi">
 
-        $('#btndangnhap1').click(function(){
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+    .body-login {
+        background: url('https://img.freepik.com/free-vector/abstract-technology-particle-background_23-2148426649.jpg?t=st=1740189652~exp=1740193252~hmac=afc317ed2fd76b8ad28e1eb3bba2328e2c538258bc0a01b3842586c946893ca3&w=1380') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto", serif;
+    }
 
-        
-            var frm = $('#frmDN1');
-            
+    .login-container {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+    }
 
-                var value = frm.find('#emaildn1').val();     
-                
-                    if(value=='')
-                    {
+    .title-login {
+        font-weight: 900;
+        color: #000;
+    }
 
-                            $('#emaildn-error').html('');
-                         $("#emaildn1").after('<div for="email" generated="true" class="mage-error" id="emaildn-error">VUi lòng nhập số điện thoại hoặc email .</div>');
-                       return false;
+    .login-container img {
+        width: 80px;
+        margin-bottom: 15px;
+    }
 
-                    }
-                    else
-                    {
-                        $('#emaildn-error').html('');
+    .form-control {
+        margin-bottom: 15px;
+    }
 
-                    }
-                
-                    var pass1 = frm.find('#passworddn1');
-                    if(pass1.val()==''){
+    .btn-signin {
+        background-color: #28a745;
+        color: white;
+    }
 
-                            $('#passdn-error').html('');
-                             $("#passworddn1").after('<div for="email" generated="true" class="mage-error" id="passdn-error">Vui lòng nhập mật khẩu</div>');
-                            return false;
+    .btn-signin:hover {
+        background-color: #218838;
+    }
 
-                    }
-                    else
-                    {
-                         $('#passdn-error').html('');
-                    }
-                    
+    .mt-3 {
+        color: #000;
+    }
+    </style>
+</head>
 
-
-
-                
-            frm.submit();
-            return false;
-        });
-         
-});
-
-</script>
- <div id="page_register">
-          <div class="container">
-        <div class="main_form_register">
-
-                <div id="lg_register">
-
-                    <div class="main_content_sub_res">
-                            <form action="dang-nhap.html" method="post" id="frmDN1" name="frmDN1">
-                                    <div class="block_more_login">
-                                    <div class="space_bottom_10"><b>ĐĂNG NHẬP</b></div>
-                                    <div class="form-group">
-                                        <div class="relative">
-                                              <input name="emaildn" id="emaildn1" type="text" placeholder="Nhập email hoặc số điện thoại" class="form-control">
-
-                                        
-                                            <i aria-hidden="true" class="fa fa-envelope-o"></i>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="relative">
-                                            <input  name="passworddn"  id="passworddn1" autocomplete="off" type="password" placeholder="Nhập mật khẩu từ 6 - 32 ký tự" class="form-control" >
-                                            <i aria-hidden="true" class="fa fa-lock"></i>
-                                        </div>
-                                       
-                                          <input type="text" hidden="hidden" name="urllogin" value="<?=q_getCurrentPageURL1()?>">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="checkbox-inline"><input type="checkbox"> Nhớ mật khẩu</label>
-                                        <a href="quen-mat-khau.html" class="popup-forgot txt_color_1 pull-right"  >Quên mật khẩu</a>
-                                        
-                                        <div class="clearfix"></div>
-                                    </div>
-                                
-                                
-                          
-                                  
-
-                                    <button id="btndangnhap1" name="btndangnhap1" type="submit" class="btn btn_site_1">Đăng nhập</button>
-                                </div>
-                            </form>
-                    </div>
-
+<div class="body-login">
+    <div class="login-container">
+        <img src="https://images.careerviet.vn/employer_folders/lot8/274748/172357logosact_-10.png" class="header_logo"
+            alt="Logo" style="width: 150px" />
+        </a>
+        <h4 class=" title-login">Đăng nhập</h4>
+        <form action="dang-nhap.html" method="post" id="frmDN1">
+            <input type="text" id="emaildn1" name="emaildn" class="form-control" placeholder="Username" required>
+            <input type="password" id="passworddn1" name="passworddn" class="form-control" placeholder="Password"
+                required>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <input type="checkbox" id="rememberMe"> <label for="rememberMe">Lưu đăng nhập</label>
                 </div>
-            
-
-        </div>
-        <div class="block_register_page_login">
-            <div class="space_bottom_5 txt_15">Bạn chưa có tài khoản?</div>
-            <a href="dang-ky.html" class="btn1 btn_site_2">Đăng ký</a>
-        </div>
-
+                <a href="quen-mat-khau.html" class="text-primary">Quên mật khẩu?</a>
+            </div>
+            <button type="submit" class="btn btn-signin w-100">Đăng nhập</button>
+        </form>
+        <p class="mt-3">Bạn chưa có tài khoản? <a href="dang-ky.html" class="text-primary">Đăng ký tài khoản</a></p>
+    </div>
 </div>
-</div>
+
+</html>
