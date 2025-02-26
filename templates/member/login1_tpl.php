@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <style>
     .body-login {
-        background: url('https://img.freepik.com/free-vector/abstract-technology-particle-background_23-2148426649.jpg?t=st=1740189652~exp=1740193252~hmac=afc317ed2fd76b8ad28e1eb3bba2328e2c538258bc0a01b3842586c946893ca3&w=1380') no-repeat center center/cover;
+        background: url('https://media.tapchitaichinh.vn/w1480/images/upload/giahan/08172022/chinh_sach_tai_khoa_la_gi_luanvan2s.jpg') no-repeat center center/cover;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -17,7 +17,7 @@
     }
 
     .login-container {
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255);
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -41,6 +41,7 @@
     }
 
     .btn-signin {
+        text-decoration: none;
         background-color: #28a745;
         color: white;
     }
@@ -51,6 +52,10 @@
 
     .mt-3 {
         color: #000;
+    }
+
+    .text-primary {
+        text-decoration: none;
     }
     </style>
 </head>

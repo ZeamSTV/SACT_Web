@@ -1,21 +1,33 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 <div class="trang-ch">
-<div class="banner-container">
-    <div class="banner-wrapper">
-        <div class="banner-slide" style="width:1476px; height: 508px; background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20191120/pngtree-financial-fashion-simple-stock-market-webpage-advertising-banner-background-image_322675.jpg');"></div>
-        <div class="banner-slide" style="width:1476px; height: 508px; background-image: url('https://giacatloi.vn/wp-content/uploads/2020/05/chung-khoan-forex-phai-sinh-hang-hoa.jpg');"></div>
-        <div class="banner-slide" style="width:1476px; height: 508px; background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20210906/pngtree-financial-stock-trend-blue-business-image_805475.jpg');"></div>
+    <div class="banner-container">
+        <div class="banner-wrapper">
+            <div class="banner-slide"
+                style="width:1476px; height: 508px; background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20191120/pngtree-financial-fashion-simple-stock-market-webpage-advertising-banner-background-image_322675.jpg');">
+            </div>
+            <div class="banner-slide"
+                style="width:1476px; height: 508px; background-image: url('https://giacatloi.vn/wp-content/uploads/2020/05/chung-khoan-forex-phai-sinh-hang-hoa.jpg');">
+            </div>
+            <div class="banner-slide"
+                style="width:1476px; height: 508px; background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20210906/pngtree-financial-stock-trend-blue-business-image_805475.jpg');">
+            </div>
+        </div>
+
+        <svg class="arrow-chevron-left" onclick="prevSlide()" width="49" height="48" viewBox="0 0 49 48" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M33.8733 35.818L21.8089 23.9999L33.8733 12.1817L30.625 9L15.3125 23.9999L30.625 39L33.8733 35.818Z"
+                fill="white" />
+        </svg>
+        <svg class="arrow-chevron-right" onclick="nextSlide()" width="48" height="48" viewBox="0 0 48 48" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.8181 12.182L26.6362 24.0001L14.8181 35.8183L18 39L33 24.0001L18 9L14.8181 12.182Z"
+                fill="white" />
+        </svg>
     </div>
-    
-    <svg class="arrow-chevron-left" onclick="prevSlide()" width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M33.8733 35.818L21.8089 23.9999L33.8733 12.1817L30.625 9L15.3125 23.9999L30.625 39L33.8733 35.818Z" fill="white" />
-    </svg>
-    <svg class="arrow-chevron-right" onclick="nextSlide()" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14.8181 12.182L26.6362 24.0001L14.8181 35.8183L18 39L33 24.0001L18 9L14.8181 12.182Z" fill="white" />
-    </svg>
-</div>
     <?php
 $cards = [
     [
@@ -51,15 +63,16 @@ $cards = [
 ];
 ?>
 
-<div class="cards-container">
-    <?php foreach ($cards as $card): ?>
+    <div class="cards-container">
+        <?php foreach ($cards as $card): ?>
         <div class="stacked-card">
             <div class="card-state-layer-outlined">
                 <div class="state-layer"></div>
             </div>
             <div class="content-container">
                 <div class="media-text-content">
-                    <img class="media" src="<?= $card['image']; ?>"style="height: 180px; object-fit: cover;" alt="<?= $card['title']; ?>" />
+                    <img class="media" src="<?= $card['image']; ?>" style="height: 180px; object-fit: cover;"
+                        alt="<?= $card['title']; ?>" />
                     <div class="text-content">
                         <div class="headline">
                             <div class="title"> <?= $card['title']; ?> </div>
@@ -68,7 +81,7 @@ $cards = [
                         <div class="supporting-text">
                             <ul>
                                 <?php foreach ($card['description'] as $item): ?>
-                                    <li><?= $item; ?></li>
+                                <li><?= $item; ?></li>
                                 <?php endforeach; ?>
                             </ul>
                         </div>
@@ -83,92 +96,98 @@ $cards = [
                 </div>
             </div>
         </div>
-    <?php endforeach; ?>
-</div>
+        <?php endforeach; ?>
+    </div>
 
-            <div class="primary-button2">
-                <div class="state-layer2">
-                    <a href="san-pham" class="label-text cta-button"><span> Xem thêm chi tiết </span></a>
-                </div>
-            </div><img class="sideslide-01-16978617950-1" src="sideslide-01-16978617950-10.png" />
-            <div class="s-n-ph-m-giao-d-ch"> Sản phẩm giao dịch </div><img class="cafetrangchu-1" src="cafetrangchu-10.png" /><img class="bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-1" src="bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-10.png" /><img class="_26-16978617877-1" src="_26-16978617877-10.png" />
-            <div class="s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u"> Sản phẩm giao dịch của chúng tôi, và giao dịch toàn cầu </div>
-   
-    <img class="nhandinhthitruong-1" src="nhandinhthitruong-10.png" />
+    <div class="primary-button2">
+        <div class="state-layer2">
+            <a href="san-pham" class="label-text cta-button"><span> Xem thêm chi tiết </span></a>
+        </div>
+    </div><img class="sideslide-01-16978617950-1"
+        src="https://hanghoavietnam.com.vn/upload/sanpham/sideslide01-16978617950.jpg" />
+    <div class="s-n-ph-m-giao-d-ch"> Sản phẩm giao dịch </div><img class="cafetrangchu-1"
+        src="https://hanghoavietnam.com.vn/upload/sanpham/bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta720x4751-16978618106.jpg" /><img
+        class="bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-1"
+        src="https://hanghoavietnam.com.vn/upload/sanpham/nonferrousmetalsvfqh1-16978618058.jpg" /><img
+        class="_26-16978617877-1" src="https://hanghoavietnam.com.vn/upload/sanpham/26-16978617877.jpg" />
+    <div class="s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u"> Sản phẩm giao dịch của chúng tôi, và giao dịch
+        toàn cầu </div>
+
+    <img class="nhandinhthitruong-1" src="https://hanghoa3d.com/images/photos/nhandinhthitruong.jpg" />
     <div class="nhandinhthitruongtitle"> Nhận định thị trường hàng ngày </div>
-     <!-- TradingView Widget BEGIN -->
- <!-- TradingView Widget BEGIN -->
- <div class="tradingview-widget-wrapper">
+    <!-- TradingView Widget BEGIN -->
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-wrapper">
         <div class="tradingview-widget-container">
             <div class="tradingview-widget-container__widget"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
             {
-                "symbols": [
-       {
-      "description": "Dầu Brent",
-      "proName": "BLACKBULL:BRENT"
-    },
-    {
-      "description": "Đồng",
-      "proName": "CAPITALCOM:COPPER"
-    },
-    {
-      "description": "Nhôm Tương Lai",
-      "proName": "SHFE:AL1!"
-    },
-    {
-      "description": "Ngô Mini Tương Lai",
-      "proName": "CBOT_MINI:XC1!"
-    },
-    {
-      "description": "Dầu Crude Tương Lai",
-      "proName": "NYMEX:CL1!"
-    },
-    {
-      "description": "Đậu Tương",
-      "proName": "CBOT:ZS1!"
-    },
-    {
-      "description": "Lúa Mì Tương Lai",
-      "proName": "CBOT:ZW1!"
-    },
-    {
-      "description": "Dầu Đậu Tương Tương Lai",
-      "proName": "CBOT:ZL1!"
-    },
-    {
-      "description": "Ca Cao Tương Lai",
-      "proName": "ICEUS:CC1!"
-    },
-    {
-      "description": "Cà Phê Tương Lai",
-      "proName": "ICEUS:KC1!"
-    },
-    {
-      "description": "Đường 11 Tương Lai",
-      "proName": "ICEUS:SB1!"
-    },
-    {
-      "description": "Cao su RSS3",
-      "proName": "TOCOM:TRB1!"
-    },
-    {
-      "description": "Ca Cao Tương Lai",
-      "proName": "NYMEX:CJ1!"
-    },
-    {
-      "description": "Đồng Tương Lai",
-      "proName": "COMEX:HG1!"
-    },
-    {
-      "description": "Bạc Mini Tương Lai",
-      "proName": "COMEX_MINI:SIL1!"
-    },
-    {
-      "description": "Kẽm Mini Tương LAi",
-      "proName": "MCX:ZINCMINI1!"
-    }
-  ],
+                "symbols": [{
+                        "description": "Dầu Brent",
+                        "proName": "BLACKBULL:BRENT"
+                    },
+                    {
+                        "description": "Đồng",
+                        "proName": "CAPITALCOM:COPPER"
+                    },
+                    {
+                        "description": "Nhôm Tương Lai",
+                        "proName": "SHFE:AL1!"
+                    },
+                    {
+                        "description": "Ngô Mini Tương Lai",
+                        "proName": "CBOT_MINI:XC1!"
+                    },
+                    {
+                        "description": "Dầu Crude Tương Lai",
+                        "proName": "NYMEX:CL1!"
+                    },
+                    {
+                        "description": "Đậu Tương",
+                        "proName": "CBOT:ZS1!"
+                    },
+                    {
+                        "description": "Lúa Mì Tương Lai",
+                        "proName": "CBOT:ZW1!"
+                    },
+                    {
+                        "description": "Dầu Đậu Tương Tương Lai",
+                        "proName": "CBOT:ZL1!"
+                    },
+                    {
+                        "description": "Ca Cao Tương Lai",
+                        "proName": "ICEUS:CC1!"
+                    },
+                    {
+                        "description": "Cà Phê Tương Lai",
+                        "proName": "ICEUS:KC1!"
+                    },
+                    {
+                        "description": "Đường 11 Tương Lai",
+                        "proName": "ICEUS:SB1!"
+                    },
+                    {
+                        "description": "Cao su RSS3",
+                        "proName": "TOCOM:TRB1!"
+                    },
+                    {
+                        "description": "Ca Cao Tương Lai",
+                        "proName": "NYMEX:CJ1!"
+                    },
+                    {
+                        "description": "Đồng Tương Lai",
+                        "proName": "COMEX:HG1!"
+                    },
+                    {
+                        "description": "Bạc Mini Tương Lai",
+                        "proName": "COMEX_MINI:SIL1!"
+                    },
+                    {
+                        "description": "Kẽm Mini Tương LAi",
+                        "proName": "MCX:ZINCMINI1!"
+                    }
+                ],
                 "showSymbolLogo": true,
                 "isTransparent": true,
                 "displayMode": "adaptive",
@@ -180,55 +199,58 @@ $cards = [
     </div>
     <!-- TradingView Widget END -->
     <section class="about-section">
-    <div class="section-container">
-        <div class="about-content">
-            <h2 class="section-subtitle"><?=$motalydo['h1_vi']?></h2>
-            <h1 class="section-title"><?=$motalydo['h2_vi']?></h1>
-            <div class="section-description">
-                <?=$motalydo['mota_vi']?>
-            </div>
-            <a href="dang-ky-tai-khoan" class="cta-button">
-                <span>Mở tài khoản ngay</span>
-                <i class="fa fas-chevron-right"></i>
-            </a>
-        </div>
-
-        <div class="reasons-grid">
-            <h3 class="reasons-title"><?=$motalydo['h3_vi']?></h3>
-            <div class="reasons-container">
-                <?php foreach ($lydo as $key => $v) { ?>
-                <div class="reason-item">
-                    <div class="reason-icon">
-                        <img src="<?=_upload_tinnho_l.$v['photo']?>" alt="<?=$v['ten_vi']?>">
-                    </div>
-                    <div class="reason-content">
-                        <h4><?=$v['ten_vi']?></h4>
-                        <p><?=$v['mota_vi']?></p>
-                    </div>
+        <div class="section-container">
+            <div class="about-content">
+                <h2 class="section-subtitle"><?=$motalydo['h1_vi']?></h2>
+                <h1 class="section-title"><?=$motalydo['h2_vi']?></h1>
+                <div class="section-description">
+                    <?=$motalydo['mota_vi']?>
                 </div>
-                <?php } ?>
+                <a href="dang-ky-tai-khoan" class="cta-button">
+                    <span>Mở tài khoản ngay</span>
+                    <i class="fa fas-chevron-right"></i>
+                </a>
+            </div>
+
+            <div class="reasons-grid">
+                <h3 class="reasons-title"><?=$motalydo['h3_vi']?></h3>
+                <div class="reasons-container">
+                    <?php foreach ($lydo as $key => $v) { ?>
+                    <div class="reason-item">
+                        <div class="reason-icon">
+                            <img src="<?=_upload_tinnho_l.$v['photo']?>" alt="<?=$v['ten_vi']?>">
+                        </div>
+                        <div class="reason-content">
+                            <h4><?=$v['ten_vi']?></h4>
+                            <p><?=$v['mota_vi']?></p>
+                        </div>
+                    </div>
+                    <?php } ?>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <div class="tin-t-c-m-i-nh-t"> TIN TỨC MỚI NHẤT </div>
     <div class="newfeed-g-1">
         <div class="product-info-card">
             <img class="image" src="image0.png" />
         </div>
-        <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng"> BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br /> </div>
+        <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng"> BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />CÁCH XÁC ĐỊNH BIÊN
+            ĐỘ GIAO ĐỘNG<br /> </div>
     </div>
     <div class="newfeed-g-2">
         <div class="product-info-card2">
             <img class="image" src="image1.png" />
         </div>
-        <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng2"> BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br /> </div>
+        <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng2"> BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />CÁCH XÁC ĐỊNH
+            BIÊN ĐỘ GIAO ĐỘNG<br /> </div>
     </div>
     <div class="newfeed-g-3">
         <div class="product-info-card3">
             <img class="image" src="image2.png" />
         </div>
-        <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng3"> BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br /> </div>
+        <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng3"> BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />CÁCH XÁC ĐỊNH
+            BIÊN ĐỘ GIAO ĐỘNG<br /> </div>
     </div>
     <div class="tt-khac">
         <div class="button1"> TIN TỨC KHÁC </div>
@@ -237,20 +259,21 @@ $cards = [
     </div>
     <div class="rectangle-container">
         <div class="ch-a-co-ta-i-khoa-n"> Chưa có tài khoản? </div>
-        <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể đạt lợi nhuận mỗi tháng. </div>
+        <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể
+            đạt lợi nhuận mỗi tháng. </div>
         <div class="button2">
             <div class="state-layer2">
                 <div class="label-text2"> Đăng ký </div>
             </div>
         </div>
     </div>
-  
+
 </div>
 <style>
-   .trang-ch,
+.trang-ch,
 .trang-ch * {
     box-sizing: border-box;
-    
+
 }
 
 .trang-ch {
@@ -261,33 +284,43 @@ $cards = [
 }
 
 .banner-container {
-        position: absolute;
-        width: 100%;
-        height: 508px;
-        overflow: hidden;
-    }
-    .banner-wrapper {       
-        display: flex;
-        width: 100%;
-        height: 100%;
-        transition: transform 1s ease-in-out;
-    }
-    .banner-slide {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        flex-shrink: 0;
-    }
-    .arrow-chevron-left, .arrow-chevron-right {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-    }
-    .arrow-chevron-left { left: 20px; }
-    .arrow-chevron-right { right: 20px; }
+    position: absolute;
+    width: 100%;
+    height: 508px;
+    overflow: hidden;
+}
+
+.banner-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.banner-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.arrow-chevron-left,
+.arrow-chevron-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow-chevron-left {
+    left: 20px;
+}
+
+.arrow-chevron-right {
+    right: 20px;
+}
 
 .cards-container {
     display: flex;
@@ -946,6 +979,7 @@ $cards = [
     align-items: center;
     justify-content: center;
 }
+
 .about-section {
     padding: 80px 0;
     position: relative;
@@ -1046,28 +1080,30 @@ $cards = [
     color: #4a5568;
     line-height: 1.5;
 }
+
 .tradingview-widget-wrapper {
     position: absolute;
     overflow: hidden;
     border-radius: 6px;
     margin: 0 auto;
     position: relative;
-    top:2260px;
+    top: 2260px;
 }
 
 .tradingview-widget-container {
     height: 46px;
     width: auto;
 }
+
 @media (max-width: 992px) {
     .section-container {
         grid-template-columns: 1fr;
     }
-    
+
     .reasons-container {
         grid-template-columns: 1fr;
     }
-    
+
     .about-content {
         position: static;
     }
@@ -1075,22 +1111,22 @@ $cards = [
 </style>
 <script>
 let currentSlide = 0;
-    const slides = document.querySelectorAll('.banner-slide');
-    const wrapper = document.querySelector('.banner-wrapper');
-    
-    function showSlide(index) {
-        wrapper.style.transform = `translateX(-${index * 100}%)`;
-    }
-    
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-    }
-    
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
-    }
-    
-    setInterval(nextSlide, 3000);
+const slides = document.querySelectorAll('.banner-slide');
+const wrapper = document.querySelector('.banner-wrapper');
+
+function showSlide(index) {
+    wrapper.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+setInterval(nextSlide, 3000);
 </script>
