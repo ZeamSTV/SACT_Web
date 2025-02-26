@@ -8,4 +8,8 @@ $baseDir = dirname($vendorDir);
 return array(
     'PhpOffice\\PhpWord\\' => array($vendorDir . '/phpoffice/phpword/src/PhpWord'),
     'PhpOffice\\Math\\' => array($vendorDir . '/phpoffice/math/src/Math'),
+<<<<<<< HEAD
+=======
+    'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
+>>>>>>> 13d4a64f9460a6adcd2bd791093f4fa58599bd79
 );

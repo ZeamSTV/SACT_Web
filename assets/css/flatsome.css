@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html {
-	font-family: sans-serif;
+	font-family: "Roboto", serif;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
 }
@@ -4113,7 +4113,7 @@ a.icon-remove {
 
 button.icon:not(.button),
 a.icon:not(.button) {
-	font-family: sans-serif;
+	font-family: "Roboto", serif;
 	margin-left: .25em;
 	margin-right: .25em;
 	font-size: 1.2em
@@ -4329,7 +4329,7 @@ span+.image-icon {
 	content: attr(data-icon-label);
 	position: absolute;
 	font-style: normal;
-	font-family: Arial, Sans-serif !important;
+	font-family: Arial, "Roboto", serif !important;
 	top: -10px;
 	right: -10px;
 	font-weight: bolder;
@@ -9286,7 +9286,7 @@ a.hotspot:hover {
 }
 
 .tooltipster-default .tooltipster-content {
-	font-family: Arial, sans-serif;
+	font-family: Arial, "Roboto", serif;
 	font-size: 14px;
 	line-height: 16px;
 	padding: 8px 10px;
@@ -9521,7 +9521,7 @@ html {
 
 #wrapper,
 #main {
-	background-color: #fff;
+	background-color:white ;
 	position: relative
 }
 
