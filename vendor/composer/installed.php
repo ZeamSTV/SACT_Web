@@ -3,7 +3,11 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
+<<<<<<< HEAD
+        'reference' => '596935a2921591ac69edef92e5dae0089d92dc1c',
+=======
         'reference' => '1656c62c897842a4eafebee0d2c60060cb046cd2',
+>>>>>>> 13d4a64f9460a6adcd2bd791093f4fa58599bd79
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,12 +17,18 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
+<<<<<<< HEAD
+            'reference' => '596935a2921591ac69edef92e5dae0089d92dc1c',
+=======
             'reference' => '1656c62c897842a4eafebee0d2c60060cb046cd2',
+>>>>>>> 13d4a64f9460a6adcd2bd791093f4fa58599bd79
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
+=======
         'phpmailer/phpmailer' => array(
             'pretty_version' => 'v6.9.3',
             'version' => '6.9.3.0',
@@ -28,6 +38,7 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+>>>>>>> 13d4a64f9460a6adcd2bd791093f4fa58599bd79
         'phpoffice/math' => array(
             'pretty_version' => '0.2.0',
             'version' => '0.2.0.0',

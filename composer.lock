@@ -4,6 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
+    "content-hash": "df3112fa4c25eaeedf04816349a98179",
+    "packages": [
+        {
+=======
     "content-hash": "e5365632929cb1f546891fbc4a0975f5",
     "packages": [
         {
@@ -88,6 +93,7 @@
             "time": "2024-11-24T18:04:13+00:00"
         },
         {
+>>>>>>> 13d4a64f9460a6adcd2bd791093f4fa58599bd79
             "name": "phpoffice/math",
             "version": "0.2.0",
             "source": {
@@ -252,10 +258,18 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
+<<<<<<< HEAD
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+=======
     "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
+>>>>>>> 13d4a64f9460a6adcd2bd791093f4fa58599bd79
     "plugin-api-version": "2.6.0"
 }

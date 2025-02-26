@@ -1,6 +1,8 @@
 {
     "packages": [
         {
+<<<<<<< HEAD
+=======
             "name": "phpmailer/phpmailer",
             "version": "v6.9.3",
             "version_normalized": "6.9.3.0",
@@ -85,6 +87,7 @@
             "install-path": "../phpmailer/phpmailer"
         },
         {
+>>>>>>> 13d4a64f9460a6adcd2bd791093f4fa58599bd79
             "name": "phpoffice/math",
             "version": "0.2.0",
             "version_normalized": "0.2.0.0",
