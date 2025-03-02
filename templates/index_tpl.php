@@ -86,16 +86,35 @@ $cards = [
     <?php endforeach; ?>
 </div>
 
-            <div class="primary-button2">
-                <div class="state-layer2">
-                    <a href="san-pham" class="label-text cta-button"><span> Xem thêm chi tiết </span></a>
-                </div>
-            </div><img class="sideslide-01-16978617950-1" src="sideslide-01-16978617950-10.png" />
-            <div class="s-n-ph-m-giao-d-ch"> Sản phẩm giao dịch </div><img class="cafetrangchu-1" src="cafetrangchu-10.png" /><img class="bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-1" src="bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-10.png" /><img class="_26-16978617877-1" src="_26-16978617877-10.png" />
-            <div class="s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u"> Sản phẩm giao dịch của chúng tôi, và giao dịch toàn cầu </div>
-   
+<!-- Bố cục sản phẩm giao dịch -->
+<div class="product-layout">
+    
+    <div class="left-column">
+      <img class="sideslide-01-16978617950-1" src="sideslide-01-16978617950-10.png" alt="Sản phẩm giao dịch">
+      <img class="bantinhanghoa" src="bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-10.png" alt="Sản phẩm giao dịch 2">
+    </div>
+    <!-- Cột phải -->
+    <div class="right-column">
+      <div class="s-n-ph-m-giao-d-ch">Sản phẩm giao dịch</div>
+      <div class="primary-button2">
+        <div class="state-layer2">
+          <a href="san-pham" class="label-text cta-button"><span> Xem thêm chi tiết </span></a>
+        </div>
+      </div>
+      <img class="_26-16978617877-1" src="_26-16978617877-10.png" alt="Sản phẩm giao dịch 3">
+      <div class="s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u">
+        Sản phẩm giao dịch của chúng tôi, và giao dịch toàn cầu
+      </div>
+      <img class="cafetrangchu-1" src="cafetrangchu-10.png" alt="Café trang chủ">
+    </div>
+  </div>
+
+
+<div class="market-insight">
+    <div class="nhandinhthitruongtitle"> Nhận định thị trường hàng ngày </div>      
     <img class="nhandinhthitruong-1" src="nhandinhthitruong-10.png" />
-    <div class="nhandinhthitruongtitle"> Nhận định thị trường hàng ngày </div>
+</div>
+    
      <!-- TradingView Widget BEGIN -->
  <!-- TradingView Widget BEGIN -->
  <div class="tradingview-widget-wrapper">
@@ -211,39 +230,54 @@ $cards = [
         </div>
     </div>
 </section>
+<div class="newss">
     <div class="tin-t-c-m-i-nh-t"> TIN TỨC MỚI NHẤT </div>
+
     <div class="newfeed-g-1">
         <div class="product-info-card">
             <img class="image" src="image0.png" />
+            <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng"> 
+                BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />
+                CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br /> 
+            </div>
         </div>
-        <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng"> BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br /> </div>
-    </div>
-    <div class="newfeed-g-2">
-        <div class="product-info-card2">
-            <img class="image" src="image1.png" />
-        </div>
-        <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng2"> BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br /> </div>
-    </div>
-    <div class="newfeed-g-3">
-        <div class="product-info-card3">
-            <img class="image" src="image2.png" />
-        </div>
-        <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng3"> BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br /> </div>
-    </div>
-    <div class="tt-khac">
-        <div class="button1"> TIN TỨC KHÁC </div>
-    </div>
     
 
-   <div class="rectangle-container">
-        <div class="ch-a-co-ta-i-khoa-n"> Chưa có tài khoản? </div>
-        <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể đạt lợi nhuận mỗi tháng. </div>
-        <div class="button2">
-            <div class="state-layer2">
-                <div class="label-text2"> Đăng ký </div>
+    
+        <div class="product-info-card">
+            <img class="image" src="image0.png" />
+            <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng"> 
+                BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />
+                CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br /> 
+            </div>
+        </div>
+    
+    
+        <div class="product-info-card">
+            <img class="image" src="image0.png" />
+            <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng"> 
+                BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />
+                CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br /> 
             </div>
         </div>
     </div>
+
+    <div class="tt-khac">
+        <div class="button1"> TIN TỨC KHÁC </div>
+    </div>
+</div>
+    
+    
+
+<div class="rectangle-container">
+    <div class="ch-a-co-ta-i-khoa-n"> Chưa có tài khoản? </div>
+    <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể đạt lợi nhuận mỗi tháng. </div>
+    <div class="button2">
+        <div class="state-layer2">
+            <div class="label-text2"> Đăng ký </div>
+        </div>
+    </div>
+</div>
     
 
     
@@ -258,7 +292,6 @@ $cards = [
 
 .trang-ch {
     background: #ffffff;
-    height: 3915px;
     position: relative;
     overflow: hidden;
 }
@@ -301,7 +334,22 @@ $cards = [
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+
+    /* opacity: 0;
+    transform: translateY(100px);
+    /* Áp dụng animation */
+    animation: fadeUp 1s ease-out forwards;  */
 }
+/* @keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
 
 .stacked-card {
     border-radius: 12px;
@@ -313,8 +361,27 @@ $cards = [
     width: 341px;
     height: 520px;
     position: relative;
-    top: 350px;
+    margin-top: 350px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+    /* Animation 0.8s, 
+       forwards giữ trạng thái cuối cùng 
+       (opacity=1, translateY(0)) */
+    animation: fadeUp 0.8s ease-out forwards; */
+}
+.stacked-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+.stacked-card:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.stacked-card:nth-child(3) {
+    transition-delay: 0.4s;
 }
 
 .card-state-layer-outlined {
@@ -497,115 +564,134 @@ $cards = [
     inset: 0;
 }
 
-.primary-button2 {
-    background: #d0172e;
-    border-radius: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    position: absolute;
-    left: 813px;
-    top: 1046px;
-    overflow: hidden;
+.product-layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+    /* Cột trái chứa các ảnh */
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        transform: translateX(-100px);
+        opacity: 0;
+        transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    }
+    /* Cột phải chứa tiêu đề, button, mô tả và ảnh khác */
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        transform: translateX(100px);
+        opacity: 0;
+        transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    }
+    /* Khi nhận class .in-view, chuyển sang trạng thái hiển thị */
+    .left-column.in-view {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .right-column.in-view {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    /* Các ảnh chung */
+    .left-column img,
+    .right-column img {
+        width: 100%;
+        border-radius: 6px;
+        object-fit: cover;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    /* Giới hạn kích thước ảnh nếu cần */
+    .left-column img {
+      max-width: 300px;
+      height: auto;
+      margin: 0 auto;
+    }
+    .right-column img {
+      max-width: 600px;
+      height: auto;
+      margin: 0 auto;
+    }
+    /* Tiêu đề chính */
+    .s-n-ph-m-giao-d-ch {
+      font-size: 48px;
+      font-weight: 800;
+      color: #000;
+      text-align: left;
+    }
+    /* Mô tả dưới tiêu đề */
+    .s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u {
+      font-size: 20px;
+      font-weight: 500;
+      color: #6f6f6f;
+      text-align: left;
+    }
+
+    /* Button "Xem thêm chi tiết" */
+    .primary-button2 {
+      background: #d0172e;
+      border-radius: 100px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      padding: 0 20px;
+      overflow: hidden;
+      margin: 20px 0;
+      max-width: 300px;
+    }
+    .primary-button2 .label-text {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    /* Responsive: căn giữa văn bản khi màn hình nhỏ */
+    @media (max-width: 768px) {
+      .s-n-ph-m-giao-d-ch, 
+      .s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u {
+        text-align: center;
+      }
+      .primary-button2 {
+        margin: 20px auto;
+      }
+    }
+
+    
+.marketplace{
+    margin-top: 150px;
 }
-
-.sideslide-01-16978617950-1 {
-    border-radius: 6px;
-    width: 294.11px;
-    height: 279px;
-    position: absolute;
-    left: 115.97px;
-    top: 923px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    object-fit: cover;
-}
-
-.s-n-ph-m-giao-d-ch {
-    color: #000000;
-    text-align: left;
-    font-family: "Roboto", serif;
-    font-size: 48px;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    font-weight: 800;
-    position: absolute;
-    left: 778px;
-    top: 923px;
-    width: 520px;
-}
-
-.cafetrangchu-1 {
-    border-radius: 6px;
-    width: 314.77px;
-    height: 442px;
-    position: absolute;
-    left: 432px;
-    top: 981px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    object-fit: cover;
-}
-
-.bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-1 {
-    border-radius: 6px;
-    width: 296.08px;
-    height: 343px;
-    position: absolute;
-    left: 114px;
-    top: 1223px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    object-fit: cover;
-}
-
-._26-16978617877-1 {
-    border-radius: 6px;
-    width: 548.87px;
-    height: 324px;
-    position: absolute;
-    left: 768.13px;
-    top: 1130px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    object-fit: cover;
-}
-
-.s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u {
-    color: #6f6f6f;
-    text-align: left;
-    font-family: "Roboto", serif;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    font-weight: 500;
-    position: absolute;
-    left: 780.91px;
-    top: 981px;
-    width: 505.59px;
-}
-
-
 .nhandinhthitruong-1 {
-    width: 1203px;
-    height: 440px;
-    position: absolute;
-    left: 114px;
-    top: 2298px;
+    width: 100%;
+    max-width: 1200px;
+    height: 450px;
     object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    margin-top: 50px;
 }
 
 .nhandinhthitruongtitle {
     color: #000000;
-    text-align: left;
+    text-align: center;
     font-family: "Roboto", serif;
     font-size: 48px;
     line-height: 67px;
     letter-spacing: 0.25px;
     font-weight: 800;
-    position: absolute;
-    left: 118px;
-    top: 2155px;
-    width: 518px;
+    width: 100%;
+    max-width: 1018px;
+    margin: 20px auto;
+    margin-top: 100px;
 }
 
 .image-3 {
@@ -693,48 +779,67 @@ $cards = [
     object-fit: cover;
 }
 
-.new-feeds {
-    position: absolute;
-    inset: 0;
+
+.newss{
+    max-width: 1200px;
+    margin: 0 auto;        
+    padding: 20px;   
 }
 
 .tin-t-c-m-i-nh-t {
     color: #000000;
-    text-align: left;
+    text-align: center;
     font-family: "Roboto", serif;
     font-size: 48px;
-    line-height: 20px;
-    letter-spacing: 0.25px;
+    line-height: 1.2;
+    margin-bottom: 30px;
     font-weight: 900;
-    position: absolute;
-    left: 499px;
-    top: 2959px;
+    
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.tin-t-c-m-i-nh-t.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .newfeed-g-1 {
-    width: 354px;
-    height: 350px;
-    position: static;
+    display: flex;
+    flex-wrap: wrap;       
+    gap: 20px;             
+    justify-content: center;
 }
 
 .product-info-card {
-    background: var(--var-sds-color-background-default-default, #ffffff);
-    border-radius: var(--var-sds-size-radius-200, 8px);
-    border-style: solid;
-    border-color: var(--var-sds-color-border-default-default, #d9d9d9);
-    border-width: 1px;
-    padding: var(--var-sds-size-space-400, 16px);
+    background: #fff;
+    border: 0px solid #d9d9d9;
+    border-radius: 2px;
+    padding: 16px;
+    width: 354px;         
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: var(--var-sds-size-space-400, 16px);
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 354px;
-    height: 337px;
-    min-width: 240px;
-    position: absolute;
-    left: 130px;
-    top: 3060px;
+    align-items: center;   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.product-info-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-info-card .image {
+  width: 100%;
+  height: 200px;       
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .image {
@@ -756,117 +861,53 @@ $cards = [
     text-align: center;
     font-family: "Roboto", serif;
     font-size: 16px;
-    line-height: 140%;
+    line-height: 1.4;
     font-weight: 900;
-    position: absolute;
-    left: 170px;
-    top: 3344px;
-}
-
-.newfeed-g-2 {
-    width: 354px;
-    height: 350px;
-    position: static;
-}
-
-.product-info-card2 {
-    background: var(--var-sds-color-background-default-default, #ffffff);
-    border-radius: var(--var-sds-size-radius-200, 8px);
-    border-style: solid;
-    border-color: var(--var-sds-color-border-default-default, #d9d9d9);
-    border-width: 1px;
-    padding: var(--var-sds-size-space-400, 16px);
-    display: flex;
-    flex-direction: column;
-    gap: var(--var-sds-size-space-400, 16px);
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 354px;
-    height: 337px;
-    min-width: 240px;
-    position: absolute;
-    left: 544px;
-    top: 3060px;
-}
-
-.bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng2 {
-    color: #000000;
-    text-align: center;
-    font-family: "Roboto", serif;
-    font-size: 16px;
-    line-height: 140%;
-    font-weight: 900;
-    position: absolute;
-    left: 584px;
-    top: 3344px;
-}
-
-.newfeed-g-3 {
-    width: 354px;
-    height: 350px;
-    position: static;
-}
-
-.product-info-card3 {
-    background: var(--var-sds-color-background-default-default, #ffffff);
-    border-radius: var(--var-sds-size-radius-200, 8px);
-    border-style: solid;
-    border-color: var(--var-sds-color-border-default-default, #d9d9d9);
-    border-width: 1px;
-    padding: var(--var-sds-size-space-400, 16px);
-    display: flex;
-    flex-direction: column;
-    gap: var(--var-sds-size-space-400, 16px);
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 354px;
-    height: 337px;
-    min-width: 240px;
-    position: absolute;
-    left: 958px;
-    top: 3060px;
-}
-
-.bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng3 {
-    color: #000000;
-    text-align: center;
-    font-family: "Roboto", serif;
-    font-size: 16px;
-    line-height: 140%;
-    font-weight: 900;
-    position: absolute;
-    left: 998px;
-    top: 3344px;
 }
 
 .tt-khac {
-    background: #d0172e;
-    border-radius: 100px;
-    border-style: solid;
-    border-color: var(--var-sds-color-border-danger-secondary, #c00f0c);
-    border-width: 1px;
-    padding: var(--var-sds-size-space-300, 12px);
-    display: flex;
-    flex-direction: row;
-    gap: var(--var-sds-size-space-200, 8px);
-    align-items: center;
-    justify-content: center;
-    width: 259px;
-    height: 59px;
-    position: absolute;
-    left: 592px;
-    top: 3440px;
-    overflow: hidden;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .button1 {
-    color: var(--var-sds-color-text-danger-on-danger, #fee9e7);
-    text-align: left;
-    font-family: var(--var-sds-typography-body-font-family, "Roboto", serif);
-    font-size: var(--var-sds-size-icon-small, 24px);
-    line-height: 100%;
-    font-weight: 400;
-    position: relative;
+    display: inline-block;
+    background-color: #d0172e;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    width: 200px;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.button1.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+  .product-info-card {
+    width: 100%;    
+    max-width: 400px; 
+    margin: 0 auto;
+  }
+  .tin-t-c-m-i-nh-t {
+    font-size: 32px; 
+  }
+  .button1 {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .ng-ky-trang-chu {
@@ -880,8 +921,6 @@ $cards = [
     width: 100%;
     height: 290px;   
     display: flex;
-    position: absolute;
-    top: 3630px;
     flex-direction: column;
     padding: 40px 20px; 
     color: #ffffff; 
@@ -889,6 +928,7 @@ $cards = [
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    margin-top: 50px;
 }
 
 .ch-a-co-ta-i-khoa-n {
@@ -912,9 +952,6 @@ $cards = [
     font-weight: 400;
     width: 545px;
     height: 77.71px;
-    /* display: flex; */
-    
-    
 }
 
 .button2 {
@@ -944,8 +981,7 @@ $cards = [
 }
 .about-section {
     padding: 80px 0;
-    position: relative;
-    top: 950px;
+    margin-top: 10px;
 }
 
 .section-container {
@@ -961,6 +997,17 @@ $cards = [
     position: sticky;
     top: 100px;
     height: fit-content;
+
+    /* Trạng thái khởi đầu: ẩn và dịch sang trái */
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+/* chuyển sang trạng thái hiển thị */
+.about-content.in-view {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .section-subtitle {
@@ -988,6 +1035,7 @@ $cards = [
     display: inline-flex;
     align-items: center;
     padding: 12px 30px;
+    font-size: 20px;
     background: #d0172e;
     color: white;
     border-radius: 30px;
@@ -1003,6 +1051,15 @@ $cards = [
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    transform: translateX(100px);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.reasons-grid.in-view {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .reasons-title {
@@ -1043,12 +1100,10 @@ $cards = [
     line-height: 1.5;
 }
 .tradingview-widget-wrapper {
-    position: absolute;
     overflow: hidden;
     border-radius: 6px;
-    margin: 0 auto;
-    position: relative;
-    top:2260px;
+    margin: 30px;
+    
 }
 
 .tradingview-widget-container {
@@ -1070,7 +1125,9 @@ $cards = [
 }
 </style>
 <script>
-let currentSlide = 0;
+document.addEventListener('DOMContentLoaded', function() { 
+    // slide show
+    let currentSlide = 0;
     const slides = document.querySelectorAll('.banner-slide');
     const wrapper = document.querySelector('.banner-wrapper');
     
@@ -1089,4 +1146,43 @@ let currentSlide = 0;
     }
     
     setInterval(nextSlide, 3000);
+// ______________________observer-------------------
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    };
+
+  
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target); // Chỉ chạy một lần để tránh dư thừa
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Các phần tử cần quan sát
+    const elementsToObserve = [
+        '.stacked-card',
+        '.left-column',
+        '.right-column',
+        '.about-content',
+        '.reasons-grid',
+        '.tin-t-c-m-i-nh-t',
+        '.product-info-card',
+        '.button1'
+    ];
+
+    elementsToObserve.forEach(selector => {
+        document.querySelectorAll(selector).forEach(element => observer.observe(element));
+    });
+});
+
+
+
+
 </script>
