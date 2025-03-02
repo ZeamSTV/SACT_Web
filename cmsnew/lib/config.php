@@ -34,14 +34,14 @@
 
 
 
-	$kiemtra = str_replace($tukhoa, '*', $cautruyvan);
+$kiemtra = str_replace($tukhoa, '*', $cautruyvan);
 
-	if ($cautruyvan != $kiemtra){
-	    header("HTTP/1.0 404 Not Found");
-	    die( "404 Not found" );
-	}
+if ($cautruyvan != $kiemtra){
+header("HTTP/1.0 404 Not Found");
+die( "404 Not found" );
+}
 
-$config_url=$_SERVER["SERVER_NAME"]."public_html";
+$config_url=$_SERVER["SERVER_NAME"]."/public_html";
 
 // $config_host="103.90.220.60";
 // $config_email="noreply@kienangia.vn";
@@ -52,7 +52,7 @@ $config["langs"] = array('vi'=>'Tiếng Việt','en'=>'Tiếng Anh','cn'=>'Tiế
 $config["lang_defult"]='vi';
 
 $login_name = 'QUOCDUNG_VIETIT';
-$check_website = 'c51ce410c124a10dfgsdsdg456346f34634f636';  //L?y 1 dãy s? b?t k? nhé.
+$check_website = 'c51ce410c124a10dfgsdsdg456346f34634f636'; //L?y 1 dãy s? b?t k? nhé.
 
 $config['database']['servername'] = 'localhost';
 $config['database']['username'] = 'hanghoa_1';
