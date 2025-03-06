@@ -7167,7 +7167,8 @@ blockquote {
 	max-width: 100% !important;
 	padding-left: 0 !important;
 	padding-right: 0 !important;
-	display: block
+	display: block;
+	font-family:'Roboto'
 }
 
 .pull-right {

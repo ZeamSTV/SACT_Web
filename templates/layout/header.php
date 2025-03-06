@@ -1,5 +1,5 @@
 <header id="header" class="header has-sticky sticky-jump" style="background-color: #ffffff;">
-    <div class="header-wrapper" style="height: auto">
+    <div style="height: auto">
         <link rel="stylesheet" type="text/css" href="css.php">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <div id="masthead" class="header-main">
