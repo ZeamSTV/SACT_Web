@@ -103,10 +103,13 @@ $cards = [
     <div class="product-layout">
 
         <div class="left-column">
-            <img class="sideslide-01-16978617950-1" src="sideslide-01-16978617950-10.png" alt="Sản phẩm giao dịch">
+            <img class="sideslide-01-16978617950-1" src="img\5014_xuat-khau-ca-phe_vao-thi-truong-Nhat-Ban-300x185.jpg" alt="Sản phẩm giao dịch">
             <img class="bantinhanghoa"
-                src="bantinhanghoaphaisinhnguyenlieucongnghiepcapherobusta-720-x-4751-16978618106-10.png"
+                src="img/Dau-dau-tuong-1.jpg"
                 alt="Sản phẩm giao dịch 2">
+            <div class="s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u">
+                Sản phẩm giao dịch của chúng tôi, và giao dịch toàn cầu
+            </div>
         </div>
         <!-- Cột phải -->
         <div class="right-column">
@@ -116,11 +119,9 @@ $cards = [
                     <a href="san-pham" class="label-text cta-button"><span> Xem thêm chi tiết </span></a>
                 </div>
             </div>
-            <img class="_26-16978617877-1" src="_26-16978617877-10.png" alt="Sản phẩm giao dịch 3">
-            <div class="s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u">
-                Sản phẩm giao dịch của chúng tôi, và giao dịch toàn cầu
-            </div>
-            <img class="cafetrangchu-1" src="cafetrangchu-10.png" alt="Café trang chủ">
+            <img class="_26-16978617877-1" src="img\gao-tho-1.jpg" alt="Sản phẩm giao dịch 3">
+            
+            <img class="cafetrangchu-1" src="img/Ban-tin-hang-hoa-phai-sinh-Nguyen-lieu-cong-nghiep-Ca-phe-Robusta-720x475-1.jpg" alt="Café trang chủ">
         </div>
     </div>
 
@@ -283,7 +284,6 @@ $cards = [
     </div>
 
 
-
     <div class="rectangle-container">
         <div class="ch-a-co-ta-i-khoa-n"> Chưa có tài khoản? </div>
         <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể
@@ -294,19 +294,6 @@ $cards = [
             </div>
         </div>
     </div>
-
-    <div class="rectangle-container">
-        <div class="ch-a-co-ta-i-khoa-n"> Chưa có tài khoản? </div>
-        <div class="ha-y-ng-ha-nh-cu-ng-sact-co-th-a-t-l-i-nhu-n-m-i-tha-ng"> Hãy đồng hành cùng SACT để có thể
-            đạt lợi nhuận mỗi tháng. </div>
-        <div class="button2">
-            <div class="state-layer2">
-                <div class="label-text2"> Đăng ký </div>
-            </div>
-        </div>
-    </div>
-
-
 
 
 </div>
@@ -621,7 +608,7 @@ $cards = [
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+    margin-top: 100px;
     transform: translateX(-100px);
     opacity: 0;
     transition: transform 0.8s ease-out, opacity 0.8s ease-out;
@@ -666,8 +653,8 @@ $cards = [
 }
 
 .right-column img {
-    max-width: 600px;
-    height: auto;
+    max-width: 500px;
+    height: 300px;
     margin: 0 auto;
 }
 
@@ -681,10 +668,13 @@ $cards = [
 
 /* Mô tả dưới tiêu đề */
 .s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     color: #6f6f6f;
-    text-align: left;
+    margin-left:125px;
+    margin-top: 20px;
+    text-align: center;
+    width: 350px;
 }
 
 /* Button "Xem thêm chi tiết" */
@@ -750,81 +740,8 @@ $cards = [
     margin-top: 100px;
 }
 
-.image-3 {
-    width: 1391px;
-    height: 112px;
-    position: absolute;
-    left: 25px;
-    top: 2760px;
-    object-fit: cover;
-}
 
-.decriptions {
-    position: absolute;
-    inset: 0;
-}
 
-.k-nh-u-t-h-ng-h-a-ph-i-sinh {
-    color: #000000;
-    text-align: left;
-    font-family: "Roboto", serif;
-    font-size: 48px;
-    line-height: 67px;
-    letter-spacing: 0.25px;
-    font-weight: 800;
-    position: absolute;
-    left: 116px;
-    top: 1668px;
-    width: 520px;
-}
-
-.th-t-n-gi-n-v-nhanh-ch-ng-v-i-c-c-b-c-sau-ng-k-m-t-i-kho-n-u-t-giao-d-ch-h-ng-h-a-n-p-ti-n-k-qu-t-i-ph-n-m-m-giao-d-ch-giao-d-ch-ph-i-sinh {
-    color: #6f6f6f;
-    text-align: left;
-    font-family: "Roboto", serif;
-    font-size: 20px;
-    line-height: 37px;
-    letter-spacing: 0.25px;
-    font-weight: 400;
-    position: absolute;
-    left: 118px;
-    top: 1836px;
-}
-
-.th-t-n-gi-n-v-nhanh-ch-ng-v-i-c-c-b-c-sau-ng-k-m-t-i-kho-n-u-t-giao-d-ch-h-ng-h-a-n-p-ti-n-k-qu-t-i-ph-n-m-m-giao-d-ch-giao-d-ch-ph-i-sinh-span {
-    color: #6f6f6f;
-    font-family: "Roboto", serif;
-    font-size: 20px;
-    line-height: 37px;
-    letter-spacing: 0.25px;
-    font-weight: 400;
-}
-
-.th-t-n-gi-n-v-nhanh-ch-ng-v-i-c-c-b-c-sau-ng-k-m-t-i-kho-n-u-t-giao-d-ch-h-ng-h-a-n-p-ti-n-k-qu-t-i-ph-n-m-m-giao-d-ch-giao-d-ch-ph-i-sinh-span2 {
-    color: #6f6f6f;
-    list-style-type: disc;
-    padding-left: 1em;
-    font-family: "Roboto", serif;
-    font-size: 20px;
-    line-height: 37px;
-    letter-spacing: 0.25px;
-    font-weight: 400;
-}
-
-.primary-button3 {
-    background: #d0172e;
-    border-radius: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    position: absolute;
-    left: 116px;
-    top: 2063px;
-    overflow: hidden;
-}
 
 .image-2 {
     width: 751px;
