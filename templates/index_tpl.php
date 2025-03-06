@@ -7,13 +7,13 @@
     <div class="banner-container">
         <div class="banner-wrapper">
             <div class="banner-slide"
-                style="width:1476px; height: 508px; background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20191120/pngtree-financial-fashion-simple-stock-market-webpage-advertising-banner-background-image_322675.jpg');">
+                style="background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20191120/pngtree-financial-fashion-simple-stock-market-webpage-advertising-banner-background-image_322675.jpg');">
             </div>
             <div class="banner-slide"
-                style="width:1476px; height: 508px; background-image: url('https://giacatloi.vn/wp-content/uploads/2020/05/chung-khoan-forex-phai-sinh-hang-hoa.jpg');">
+                style=" background-image: url('https://giacatloi.vn/wp-content/uploads/2020/05/chung-khoan-forex-phai-sinh-hang-hoa.jpg');">
             </div>
             <div class="banner-slide"
-                style="width:1476px; height: 508px; background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20210906/pngtree-financial-stock-trend-blue-business-image_805475.jpg');">
+                style="background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20210906/pngtree-financial-stock-trend-blue-business-image_805475.jpg');">
             </div>
         </div>
 
@@ -128,7 +128,7 @@ $cards = [
 
     <div class="market-insight">
         <div class="nhandinhthitruongtitle"> Nhận định thị trường hàng ngày </div>
-        <img class="nhandinhthitruong-1" src="nhandinhthitruong-10.png" />
+        <img class="nhandinhthitruong-1" src="img/non-ferrous-metals_VFQH-1.jpg" />
     </div>
 
     <!-- TradingView Widget BEGIN -->
@@ -251,7 +251,7 @@ $cards = [
 
         <div class="newfeed-g-1">
             <div class="product-info-card">
-                <img class="image" src="image0.png" />
+                <img class="image" src="img/bdg.png" />
                 <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng">
                     BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />
                     CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br />
@@ -261,7 +261,7 @@ $cards = [
 
 
             <div class="product-info-card">
-                <img class="image" src="image0.png" />
+                <img class="image" src="img/bdg.png" />
                 <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng">
                     BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />
                     CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br />
@@ -270,7 +270,7 @@ $cards = [
 
 
             <div class="product-info-card">
-                <img class="image" src="image0.png" />
+                <img class="image" src="img/bdg.png" />
                 <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng">
                     BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />
                     CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br />
@@ -311,34 +311,31 @@ $cards = [
 }
 
 .banner-container {
-    position: absolute;
-    width: 100%;
+    position: relative;
     height: 508px;
     overflow: hidden;
 }
 
 .banner-wrapper {
     display: flex;
-    width: 100%;
+    /* width: 300%; */
     height: 100%;
     transition: transform 1s ease-in-out;
 }
 
 .banner-slide {
-    position: relative;
-    width: 100%;
+    flex: 0 0 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
-    flex-shrink: 0;
 }
 
-.arrow-chevron-left,
-.arrow-chevron-right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
+.arrow-chevron-left, .arrow-chevron-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
 }
 
 .arrow-chevron-left {
@@ -357,7 +354,7 @@ $cards = [
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: -100px auto;
 
     /* opacity: 0;
     transform: translateY(100px);
@@ -366,16 +363,7 @@ $cards = [
     */
 }
 
-/* @keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
+
 
 .stacked-card {
     border-radius: 12px;
@@ -387,7 +375,7 @@ $cards = [
     width: 341px;
     height: 520px;
     position: relative;
-    margin-top: 350px;
+    /* margin-top: 350px; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     opacity: 0;
@@ -656,7 +644,10 @@ $cards = [
     max-width: 500px;
     height: 300px;
     margin: 0 auto;
+    margin-right: 200px ;
 }
+
+
 
 /* Tiêu đề chính */
 .s-n-ph-m-giao-d-ch {
@@ -1107,7 +1098,7 @@ $cards = [
 document.addEventListener('DOMContentLoaded', function() {
     // slide show
     let currentSlide = 0;
-    const slides = document.querySelectorAll('.banner-slide');
+    // const slides = document.querySelectorAll('.banner-slide');
     const wrapper = document.querySelector('.banner-wrapper');
 
     function showSlide(index) {
