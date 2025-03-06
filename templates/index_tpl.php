@@ -103,10 +103,9 @@ $cards = [
     <div class="product-layout">
 
         <div class="left-column">
-            <img class="sideslide-01-16978617950-1" src="img\5014_xuat-khau-ca-phe_vao-thi-truong-Nhat-Ban-300x185.jpg" alt="Sản phẩm giao dịch">
-            <img class="bantinhanghoa"
-                src="img/Dau-dau-tuong-1.jpg"
-                alt="Sản phẩm giao dịch 2">
+            <img class="sideslide-01-16978617950-1" src="img\5014_xuat-khau-ca-phe_vao-thi-truong-Nhat-Ban-300x185.jpg"
+                alt="Sản phẩm giao dịch">
+            <img class="bantinhanghoa" src="img/Dau-dau-tuong-1.jpg" alt="Sản phẩm giao dịch 2">
             <div class="s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u">
                 Sản phẩm giao dịch của chúng tôi, và giao dịch toàn cầu
             </div>
@@ -120,8 +119,10 @@ $cards = [
                 </div>
             </div>
             <img class="_26-16978617877-1" src="img\gao-tho-1.jpg" alt="Sản phẩm giao dịch 3">
-            
-            <img class="cafetrangchu-1" src="img/Ban-tin-hang-hoa-phai-sinh-Nguyen-lieu-cong-nghiep-Ca-phe-Robusta-720x475-1.jpg" alt="Café trang chủ">
+
+            <img class="cafetrangchu-1"
+                src="img/Ban-tin-hang-hoa-phai-sinh-Nguyen-lieu-cong-nghiep-Ca-phe-Robusta-720x475-1.jpg"
+                alt="Café trang chủ">
         </div>
     </div>
 
@@ -246,40 +247,46 @@ $cards = [
             </div>
         </div>
     </section>
-    <div class="newss">
-        <div class="tin-t-c-m-i-nh-t"> TIN TỨC MỚI NHẤT </div>
-
-        <div class="newfeed-g-1">
-            <div class="product-info-card">
-                <img class="image" src="image0.png" />
-                <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng">
-                    BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />
-                    CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br />
+    <div id="col-2016993133" class="col small-12 large-12">
+        <div class="col-inner text-center">
+            <h3 style="font-size:48px">TIN TỨC MỚI NHẤT</h3>
+            <div class="row large-columns-3 medium-columns-1 small-columns-1 slider row-slider slider-nav-reveal slider-nav-push"
+                data-flickity-options='{"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": false, "rightToLeft": false, "autoPlay" : false}'>
+                <?php foreach ($tinmoi as $key => $v) {?>
+                <div class="col post-item">
+                    <div class="col-inner">
+                        <a href="<?=$v['tenkhongdau_vi']?>" class="plain">
+                            <div class="box box-normal box-text-bottom box-blog-post has-hover">
+                                <div class="box-image">
+                                    <div class="image-cover" style="padding-top:56.25%;">
+                                        <img width="300" height="169" src="<?=_upload_tin3cap_l.$v['photo']?>"
+                                            class="attachment-medium size-medium wp-post-image" alt="" decoding="async"
+                                            srcset="<?=_upload_tin3cap_l.$v['photo']?> 300w, <?=_upload_tin3cap_l.$v['photo']?> 1024w, <?=_upload_tin3cap_l.$v['photo']?> 768w, <?=_upload_tin3cap_l.$v['photo']?> 1200w"
+                                            sizes="(max-width: 300px) 100vw, 300px" />
+                                    </div>
+                                </div>
+                                <div class="box-text text-center">
+                                    <div class="box-text-inner blog-post-inner">
+                                        <h5 class="post-title is-large "><?=$v['ten_vi']?></h5>
+                                        <div class="is-divider"></div>
+                                        <p class="from_the_blog_excerpt "><?=$v['mota_vi']?> </p>
+                                    </div>
+                                </div>
+                                <div class="badge absolute top post-date badge-outline">
+                                    <div class="badge-inner">
+                                        <span class="post-date-day"><?=date('d',$v['ngaytao'])?></span><br>
+                                        <span class="post-date-month is-xsmall">Th<?=date('m',$v['ngaytao'])?></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+                <?php } ?>
             </div>
-
-
-
-            <div class="product-info-card">
-                <img class="image" src="image0.png" />
-                <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng">
-                    BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />
-                    CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br />
-                </div>
-            </div>
-
-
-            <div class="product-info-card">
-                <img class="image" src="image0.png" />
-                <div class="bi-n-giao-ng-gi-l-g-c-ch-x-c-nh-bi-n-giao-ng">
-                    BIÊN ĐỘ GIAO ĐỘNG GIÁ LÀ GÌ? <br />
-                    CÁCH XÁC ĐỊNH BIÊN ĐỘ GIAO ĐỘNG<br />
-                </div>
-            </div>
-        </div>
-
-        <div class="tt-khac">
-            <div class="button1"> TIN TỨC KHÁC </div>
+            <a href="tin-tuc" target="_self" class="button primary" style="border-radius:10px;">
+                <span>Xem tin tức khác</span>
+            </a>
         </div>
     </div>
 
@@ -671,7 +678,7 @@ $cards = [
     font-size: 25px;
     font-weight: 500;
     color: #6f6f6f;
-    margin-left:125px;
+    margin-left: 125px;
     margin-top: 20px;
     text-align: center;
     width: 350px;

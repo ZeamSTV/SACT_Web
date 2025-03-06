@@ -40,6 +40,11 @@
     </div>
     <?php } ?>
     <style>
+    .banner-section {
+        padding-bottom: 50px;
+    }
+
+
     .banner-container {
         position: relative;
         height: 508px;
