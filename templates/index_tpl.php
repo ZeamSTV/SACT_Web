@@ -103,27 +103,30 @@ $cards = [
     <div class="product-layout">
 
         <div class="left-column">
+        <div class="s-n-ph-m-giao-d-ch">Sản phẩm giao dịch</div>
             <img class="sideslide-01-16978617950-1" src="img\5014_xuat-khau-ca-phe_vao-thi-truong-Nhat-Ban-300x185.jpg"
                 alt="Sản phẩm giao dịch">
             <img class="bantinhanghoa" src="img/Dau-dau-tuong-1.jpg" alt="Sản phẩm giao dịch 2">
             <div class="s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u">
                 Sản phẩm giao dịch của chúng tôi, và giao dịch toàn cầu
             </div>
-        </div>
-        <!-- Cột phải -->
-        <div class="right-column">
-            <div class="s-n-ph-m-giao-d-ch">Sản phẩm giao dịch</div>
             <div class="primary-button2">
                 <div class="state-layer2">
                     <a href="san-pham" class="label-text cta-button"><span> Xem thêm chi tiết </span></a>
                 </div>
             </div>
+        </div>
+        <!-- Cột phải -->
+        <div class="right-column">
+            
+            
             <img class="_26-16978617877-1" src="img\gao-tho-1.jpg" alt="Sản phẩm giao dịch 3">
 
             <img class="cafetrangchu-1"
                 src="img/Ban-tin-hang-hoa-phai-sinh-Nguyen-lieu-cong-nghiep-Ca-phe-Robusta-720x475-1.jpg"
                 alt="Café trang chủ">
         </div>
+        
     </div>
 
 
@@ -662,17 +665,21 @@ $cards = [
     font-weight: 800;
     color: #000;
     text-align: left;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Mô tả dưới tiêu đề */
 .s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u {
+    font-family: "Roboto", serif;
     font-size: 25px;
     font-weight: 500;
     color: #6f6f6f;
-    margin-left: 125px;
+    /* margin-left: 125px; */
     margin-top: 20px;
     text-align: center;
-    width: 350px;
+    width: 100%;
+    height: auto;
 }
 
 /* Button "Xem thêm chi tiết" */
@@ -687,6 +694,7 @@ $cards = [
     overflow: hidden;
     margin: 20px 0;
     max-width: 300px;
+    margin-left: 150px;
 }
 
 .primary-button2 .label-text {
@@ -918,14 +926,15 @@ $cards = [
     color: #ffffff;
     text-align: center;
     font-family: "Roboto", serif;
+    line-height: 1.4;
     font-size: 20px;
-    line-height: 67px;
     font-weight: 400;
-    width: 545px;
-    height: 77.71px;
-    /* display: flex; */
-
-
+    width: 100%;   
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .button2 {
