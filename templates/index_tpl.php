@@ -110,11 +110,7 @@ $cards = [
             <div class="s-n-ph-m-giao-d-ch-c-a-ch-ng-t-i-v-giao-d-ch-to-n-c-u">
                 Sản phẩm giao dịch của chúng tôi, và giao dịch toàn cầu
             </div>
-            <div class="primary-button2">
-                <div class="state-layer2">
-                    <a href="san-pham" class="label-text cta-button"><span> Xem thêm chi tiết </span></a>
-                </div>
-            </div>
+            
         </div>
         <!-- Cột phải -->
         <div class="right-column">
@@ -125,6 +121,11 @@ $cards = [
             <img class="cafetrangchu-1"
                 src="img/Ban-tin-hang-hoa-phai-sinh-Nguyen-lieu-cong-nghiep-Ca-phe-Robusta-720x475-1.jpg"
                 alt="Café trang chủ">
+            <div class="primary-button2">
+                <div class="state-layer2">
+                    <a href="san-pham" class="label-text cta-button"><span> Xem thêm chi tiết </span></a>
+                </div>
+            </div>
         </div>
         
     </div>
@@ -654,7 +655,7 @@ $cards = [
     max-width: 500px;
     height: 300px;
     margin: 0 auto;
-    margin-right: 200px ;
+    /* margin-right: 200px ; */
 }
 
 
@@ -667,6 +668,7 @@ $cards = [
     text-align: left;
     justify-content: center;
     align-items: center;
+    margin-left: 80px;
 }
 
 /* Mô tả dưới tiêu đề */
@@ -694,7 +696,7 @@ $cards = [
     overflow: hidden;
     margin: 20px 0;
     max-width: 300px;
-    margin-left: 150px;
+    margin: 0 auto;
 }
 
 .primary-button2 .label-text {

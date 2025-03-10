@@ -10,7 +10,7 @@
                     <a href="" title="<?=$company['title_vi']?>" rel="home">
                         <img width="150px" height="150px"
                             src="https://images.careerviet.vn/employer_folders/lot8/274748/172357logosact_-10.png"
-                            class="header_logo" alt="Logo" />
+                            class="8logo" alt="Logo" />
                     </a>
                 </div>
 
